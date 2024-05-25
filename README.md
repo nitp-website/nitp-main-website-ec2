@@ -29,7 +29,7 @@ To get a local copy of the project up and running, follow these steps:
 
 1. **Clone the repository:**
  
-   `git clone https://github.com/nitp-website/NITP-Admin-Portal-EC2.git`
+   `git clone https://github.com/nitp-website/NITP-Admin-Portal-EC2.git`<br>
    `cd NITP-Admin-Portal-EC2`
   
 
