@@ -106,18 +106,9 @@ const Navbar = ({ theme, changeTheme, department, font, changeFont }) => {
       <a href="https://paydirect.eduqfix.com/app/mnYv9Q6+C+3lIMqghRCwdaqVZusPrJtq2RGJrJFnKnmtz3KBqtsEFPVrZFvoPubG/3466">
        Fee Payment
       </a>
-      {` | `}
-     </span>
-     {/* <span style={{ marginLeft: `8px` }}>
-            <a href="http://www.nitp.ac.in/uploads20/Revised%20AC%202020-21.pdf">
-              Academic Calendar
-            </a>
-            {` | `}
-          </span> */}
-     <span style={{ marginLeft: `8px` }}>
-      <a href="http://old.nitp.ac.in/php/home.php">Old Website</a>{" "}
-     </span>
-    </div>
+    </span></div>
+
+ 
     <div className="col-6 end">
      <span>
       <a
