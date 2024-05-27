@@ -1,24 +1,25 @@
-import React, { useState, useEffect } from "react"
-import tandpcell from "./placements/img/tandpcell.jpg"
-import { PageLayout } from "./styles/pagelayout"
-import { TabPage } from "./styles/tabpage"
-import Navigate from "./global/Navigate"
-import Placementlist from "./placements/const"
-import { useQueryParam } from "use-query-params"
+import React, { useState, useEffect } from "react";
+import tandpcell from "./placements/img/tandpcell.jpg";
+import { TabPage } from "./styles/tabpage";
+import Navigate from "./global/Navigate";
+import Placementlist from "./placements/const";
+import { useParams } from "react-router-dom";
 
 const Placementpage = () => {
- const [tab] = useQueryParam("tab")
- const [view, setView] = useState("about")
- console.log(view)
- function getView(callback) {
-  setView(callback)
- }
- useEffect(() => {
-  Placementlist.forEach(x => {
-   x.title === tab ? setView(tab) : ""
-  })
- }, [tab])
+  const { tab } = useParams();
+  const [view, setView] = useState("about");
+
+  function getView(callback) {
+    setView(callback);
+  }
+
+  useEffect(() => {
+    Placementlist.forEach((x) => {
+      x.title === tab ? setView(tab) : "";
+    });
+  }, [tab]);
  return (
+  <>
   <TabPage>
    <Navigate data={Placementlist} callback={getView} tab={tab} />
    <div className="mainDiv">
@@ -298,6 +299,7 @@ const Placementpage = () => {
     )}
    </div>
   </TabPage>
+  </>
  )
 }
 

@@ -1,25 +1,26 @@
-import React, { useState, useEffect } from "react"
-import bank from "./facilities/img/bank.svg"
-import dummy from "./facilities/img/dummy.png"
-import medical from "./facilities/img/medical.svg"
-import security from "./facilities/img/security.svg"
-import wifi from "./facilities/img/wifi.svg"
-import woman from "./facilities/img/woman.svg"
-import electric from "./facilities/img/electric.svg"
-import Facilitymain from "./facilities/img/facilitymainimg"
-import Ccimg from "./facilities/img/ccimg"
-import PKImg from "./facilities/img/pkimg"
-import Dummyimg from "./facilities/img/dummy"
-import Sportsimg from "./facilities/img/sportsimg"
-import Medicalimg from "./facilities/img/medicalimg"
-import Hostelimg from "./facilities/img/hostelimg"
-import Labimg from "./facilities/img/labimg"
-import Libraryimg from "./facilities/img/libraryimg"
-import { PageLayout } from "./styles/pagelayout"
-import { TabPage } from "./styles/tabpage"
-import Navigate from "./global/Navigate"
-import { useQueryParam } from "use-query-params"
-import Navlist from "./global/navlist"
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import bank from "./facilities/img/bank.svg";
+import dummy from "./facilities/img/dummy.png";
+import medical from "./facilities/img/medical.svg";
+import security from "./facilities/img/security.svg";
+import wifi from "./facilities/img/wifi.svg";
+import woman from "./facilities/img/woman.svg";
+import electric from "./facilities/img/electric.svg";
+import Facilitymain from "./facilities/img/facilitymainimg";
+import Ccimg from "./facilities/img/ccimg";
+import PKImg from "./facilities/img/pkimg";
+import Dummyimg from "./facilities/img/dummy";
+import Sportsimg from "./facilities/img/sportsimg";
+import Medicalimg from "./facilities/img/medicalimg";
+import Hostelimg from "./facilities/img/hostelimg";
+import Labimg from "./facilities/img/labimg";
+import Libraryimg from "./facilities/img/libraryimg";
+import { PageLayout } from "./styles/pagelayout";
+import { TabPage } from "./styles/tabpage";
+import Navigate from "./global/Navigate";
+import Navlist from "./global/navlist";
+
 const ccdetail =
  "A state-of-the-art Computer Centre started its operation on 27th November 2011. It serves as the central computing facility for the students, research scholars and teachers of the institute. The Centre is well equipped with modern Computers (190 in number), air conditioned labs and stabilized uninterrupted power supply among the other facilities. The Centre has seven labs for all the students and one lab exclusively for PhD scholars of the institute. All labs are equipped with IP cameras to monitor the activities remotely. The Centre has 1 Gbps, 24x7 internet connectivity on optical fiber under National Knowledge Network, Govt. of India.The Centre also has a Virtual Class Room and Desktop VideoConferencing facility. It operates from 8:30 AM to 5:30 PM."
 const libdetail =
@@ -204,27 +205,28 @@ const tequipData = (
 )
 
 const Facilitiespage = () => {
- const [tab] = useQueryParam("tab")
- const [view, setView] = useState("cc")
- function getView(callback) {
-  setView(callback)
- }
- useEffect(() => {
-  Navlist.facilities.map(x => {
-   x.sub.forEach(element => {
-    tab ? (element.data === tab ? setView(tab) : "") : ""
-   })
-  })
- }, [tab])
+  const { tab } = useParams();
+  const [view, setView] = useState("cc");
+  function getView(callback) {
+    setView(callback);
+  }
+  useEffect(() => {
+    if (tab) {
+      setView(tab);
+    }
+  }, [tab]);
 
- const arrdata = []
- Navlist.facilities.map(x => arrdata.push(...x.sub))
- return (
-  <TabPage>
-   <Navigate data={arrdata} callback={getView} tab={tab ? tab : "cc"} />
-   {/* <Floatmenu /> */}
-   <div className="mainDiv">
+  const arrdata = [];
+  Navlist.facilities.map((x) => arrdata.push(...x.sub));
+
+  return (
+ <>
+    <TabPage>
+      
+      <Navigate data={arrdata} callback={getView} tab={tab ? tab : "cc"} />
+      <div className="mainDiv">
     <PageLayout>
+      
      {/* <div className="layoutrow layoutrowmain" id="home">
             <div className="col-6 imgcolstyle">
               <div className="row rowmarl3">
@@ -617,9 +619,12 @@ const Facilitiespage = () => {
        </div>
       </div>
      )}
+    
     </PageLayout>
+   
    </div>
   </TabPage>
+  </>
  )
 }
 

@@ -1,107 +1,93 @@
-import axios from "axios"
-import React, { useEffect, useState } from "react"
-import { TabPage } from "./styles/tabpage"
-import Navigate from "./global/Navigate"
-import Notice from "./home/notice"
-import AcademicsList from "./academics/const"
-import acadData from "./academics/acadData"
-import { useQueryParam } from "use-query-params"
-import Navlist from "./global/navlist"
-import DynamicLink from "./global/dynamicurl"
-import flag from "../components/home/img/flag.svg"
-import { NoticeStyle } from "./styles/notice"
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { useLocation } from "react-router-dom";
+import { TabPage } from "./styles/tabpage";
+import Navigate from "./global/Navigate";
+import Notice from "./home/notice";
+import AcademicsList from "./academics/const";
+import acadData from "./academics/acadData";
+import Navlist from "./global/navlist";
+import flag from "../components/home/img/flag.svg";
+import { NoticeStyle } from "./styles/notice";
 
 const Academicspage = () => {
- const [tab] = useQueryParam("tab")
- const [notices, setNotices] = useState()
- const [view, setView] = useState("admissions")
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const initialTab = queryParams.get("tab") || "admissions";
+  const [tab, setTab] = useState(initialTab);
+  const [notices, setNotices] = useState([]);
+  const [view, setView] = useState(initialTab);
 
- const formatStyleFix = {
-  display: "flex",
-  flexDirection: "column",
- }
 
- function getView(callback) {
-  setView(callback)
- }
- useEffect(() => {
-  tab
-   ? tab.slice(0, 10) === "programmes"
-     ? setView(tab)
-     : AcademicsList.forEach(x => {
-        x.data === tab ? setView(tab) : ""
-       })
-   : ""
- }, [tab])
 
- useEffect(() => {
-  let noticesUrl = `${process.env.GATSBY_API_URL}/api/notice/academics`
-  axios
-   .get(noticesUrl)
-   .then(res => {
-    setNotices(res.data.filter(notice => notice.isVisible === 1))
-   })
-   .catch(e => {
-    console.log(e)
-   })
- }, [])
+  function getView(callback) {
+    setView(callback);
+  }
 
- return (
-  <>
-   {true && (
-    <TabPage>
-     <Navigate
-      data={AcademicsList}
-      callback={getView}
-      tab={
-       tab
-        ? tab.slice(0, 10) === "programmes"
-          ? "programmes"
-          : tab
-        : "admissions"
-      }
-     />
-     <div className="mainDiv">
-      {view == "admissions" && (
-       <div className="layoutrow layoutrow1 rowmarl3" id="admission">
-        {/* <div className="col-6 imgcolstyle">
-                  <img src="/test.svg" className="img-fluid" loading="lazy" /> 
-                </div> */}
-        <div>
-         <div className="row">
-          <h1 style={{ marginBottom: `1rem` }}>Admissions</h1>
-         </div>
-         {acadData.Admissions.map(e => (
-          <div className="row rowmarr3 digital">
-           <div>
-            <h3>{e.title}</h3>
+  useEffect(() => {
+    setTab(queryParams.get("tab")|| "admissions");
+  }, [location.search]);
+  
+  useEffect(() => {
+    let noticesUrl = `${process.env.GATSBY_API_URL}/api/notice/academics`;
+    axios
+      .get(noticesUrl)
+      .then((res) => {
+        setNotices(res.data.filter((notice) => notice.isVisible === 1));
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  }, []);
 
-            {e.notice && (
-             <NoticeStyle>
-              <p style={{ paddingRight: "24px" }}>
-               <img id="flag" src={flag} alt="f" />
-               <a style={{ color: "OrangeRed" }}>{e.notice}</a>
-              </p>
-             </NoticeStyle>
-            )}
-            {e.data.map(item => (
-             <>
-              <a
-               href={item.link}
-               target="_blank"
-               rel="noopener noreferrer"
-               style={{ textDecoration: `none` }}
-              >
-               <li>{item.para}</li>
-              </a>
-             </>
-            ))}
-           </div>
-          </div>
-         ))}
-        </div>
-       </div>
-      )}
+  return (
+    <>
+      <TabPage>
+        <Navigate
+          data={AcademicsList}
+          callback={getView}
+          tab={tab.slice(0, 10) === "programmes" ? tab : "admissions"}
+        />
+        <div className="mainDiv">
+          {view === "admissions" && (
+            <div className="layoutrow layoutrow1 rowmarl3" id="admission">
+              <div>
+                <div className="row">
+                  <h1 style={{ marginBottom: `1rem` }}>Admissions</h1>
+                </div>
+                {acadData.Admissions.map((e) => (
+                  <div className="row rowmarr3 digital">
+                    <div>
+                      <h3>{e.title}</h3>
+
+                      {e.notice && (
+                        <NoticeStyle>
+                          <p style={{ paddingRight: "24px" }}>
+                            <img id="flag" src={flag} alt="f" />
+                            <a style={{ color: "OrangeRed" }}>{e.notice}</a>
+                          </p>
+                        </NoticeStyle>
+                      )}
+                      {e.data.map((item) => (
+                        <>
+                          <a
+                            href={item.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{ textDecoration: `none` }}
+                          >
+                            <li>{item.para}</li>
+                          </a>
+                        </>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+            
       {view.slice(0, 10) == "programmes" ? (
        <div className="row rowmarl3">
         <div className="digital">
@@ -552,7 +538,7 @@ const Academicspage = () => {
         <div className="row rowmarl3">
          <h1>Formats</h1>
         </div>
-        <div className="row rowmarl3 digital" style={formatStyleFix}>
+        <div className="row rowmarl3 digital" >
          {acadData.format.map(item =>
           item.data.map((e, idx) => (
            <p key={idx}>
@@ -883,11 +869,12 @@ const Academicspage = () => {
       ) : (
        ""
       )}
-     </div>
-    </TabPage>
-   )}
-  </>
- )
-}
 
-export default Academicspage
+          </div>
+        </TabPage>
+    
+    </>
+  );
+};
+
+export default Academicspage;
