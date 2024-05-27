@@ -30,9 +30,9 @@ const Admin = [
   data: "",
   sub: [
    {
-    url: "/administration",
+    url: "/administration/?tab=director",
     title: "Director",
-    data: "director",
+    
    },
    // {
    //   url: "/administration",
@@ -40,14 +40,14 @@ const Admin = [
    //   data: "deputydirector",
    // },
    {
-    url: "/administration",
+    url: "/administration/?tab=deans",
     title: "Deans",
-    data: "deans",
+    
    },
    {
-    url: "/administration",
+    url: "/administration/?tab=registrar",
     title: "Registrar",
-    data: "registrar",
+    
    },
    {
     url: "/administration",
@@ -123,15 +123,15 @@ const Home = [
    },
    {
     url: "/faculties",
-    title: "Faculty of NIT Patna",
+    title: "Faculty",
    },
    {
     url: "/officers",
-    title: "Officers of NIT Patna",
+    title: "Officers",
    },
    {
     url: "/otherEmployees",
-    title: "Other Employees of NIT Patna",
+    title: "Employees",
    },
   ],
  },
@@ -145,7 +145,7 @@ const Home = [
     title: "PAN/ GST",
    },
    {
-    url: "http://web.nitp.ac.in/alumni/html/index.html",
+    url: "https://alumini-nitp.vercel.app/",
     title: "Alumni",
    },
    {
@@ -492,7 +492,7 @@ const Students = [
   data: "",
   sub: [
    {
-    url: "http://old.nitp.ac.in/alumni/html/index.html",
+    url: "https://alumini-nitp.vercel.app/",
     title: "Alumni",
    },
    {
