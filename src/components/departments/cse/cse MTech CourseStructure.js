@@ -1,3 +1,4 @@
+import React from "react";
 const Mtech = [
  {
   dept: "M.Tech(CSE) Semester- I",

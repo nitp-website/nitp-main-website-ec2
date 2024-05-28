@@ -1,3 +1,4 @@
+import React from "react";
 const Course_DD_CyberSecurity = [
  {
   coursecode: "CS14102",

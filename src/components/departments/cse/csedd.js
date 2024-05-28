@@ -1,2 +1,3 @@
-const computerScienceDualDegreeCourse = []
-export default computerScienceDualDegreeCourse
+import React from "react";
+const Coursedd = []
+export default Coursedd

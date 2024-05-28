@@ -1,6 +1,6 @@
-import React from "react"
+import React from "react";
 
-const Btech = [
+const Coursephd = [
  {
   "Sl. No.": "Mandatory Courses",
   coursecode: "",
@@ -124,4 +124,4 @@ const Btech = [
  },
 ]
 
-export default Btech
+export default Coursephd

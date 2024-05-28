@@ -1,4 +1,5 @@
-const CSEBtech22_onwards = [
+import React from "react";
+const Course_CSEBtech22_onwards = [
  {
   coursecode: "CS14102",
   coursetitle: "Programming in C",
@@ -1130,4 +1131,4 @@ const CSEBtech22_onwards = [
   sem_elect: "EL",
  },
 ]
-export default CSEBtech22_onwards
+export default Course_CSEBtech22_onwards
