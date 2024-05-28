@@ -1,3 +1,4 @@
+import React from "react";
 const Course_DD_DataScience = [
  {
   coursecode: "CS14102",

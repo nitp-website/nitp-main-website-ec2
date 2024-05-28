@@ -1,14 +1,6 @@
-const CSEBtechCourseStructure = [
- // {
- //   dept: `Deptt`,
- //   sem_elect: `Sem/Electives`,
- //   coursecode: `Course Code`,
- //   coursetitle: `Course Title`,
- //   l: `L`,
- //   t: `T`,
- //   p: `P`,
- //   credits: `Credits`,
- // },
+import React from "react";
+const Courseug = [
+
  {
   dept: `CSUG`,
   sem_elect: `1`,
@@ -1311,4 +1303,4 @@ const CSEBtechCourseStructure = [
  },
 ]
 
-export default CSEBtechCourseStructure
+export default Courseug

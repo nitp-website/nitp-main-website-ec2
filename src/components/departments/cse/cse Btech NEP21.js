@@ -1,4 +1,5 @@
-const CSEBtechNEP21 = [
+import React from "react";
+const Courseug_nep21 = [
  {
   coursecode: "CS14103",
   coursetitle: "Web Technology",
@@ -847,4 +848,4 @@ const CSEBtechNEP21 = [
   url: `#`,
  },
 ]
-export default CSEBtechNEP21
+export default Courseug_nep21
