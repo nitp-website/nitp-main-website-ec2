@@ -1164,176 +1164,8 @@ const Tables = {
     "https://www.nitp.ac.in/profile?id=contract.faculty3.ee@nitp.ac.in",
   },
  ],
- //  <th>Name of the faculty</th>
- //  <th>Mail</th>
- //  staffmember: [
- //   {
- //    "S.No.": 1,
- //    Name: "Sri Atul Kumar",
- //    Designation: "Sr. Technical Assistant",
- //    "Contact details": "atulkumar@nitp.ac.in",
- //    Qualification: "B.Tech in Mechanical Engineering",
- //    //Status: "completed"
- //   },
- //   {
- //    "S.No.": 2,
- //    Name: "Shad Ali Sabari ",
- //    Designation: "Sr. Technical Assistant ",
- //    "Contact details": "shad@nitp.ac.in  ",
- //    Qualification: " B.Tech in Mechanical Engineering",
- //    //Status: "Completed",
- //   },
- //   {
- //    "S.No.": 3,
- //    Name: "Md. Wahajul Haque ",
- //    Designation: " Sr. Technical Assistant",
- //    "Contact details": "wahajul@nitp.ac.in ",
- //    Qualification:
- //     "B.Tech in Mechanical Engineering and Pursuing Ph.D. at NIT Patna ",
- //    //Status: "Completed",
- //   },
- //   {
- //    "S.No.": 4,
- //    Name: " Sri Surendra Kumar",
- //    Designation: "Technical Assistant ",
- //    "Contact details": "surendra.me@nitp.ac.in ",
- //    Qualification: "B.E in Mechanical Engineering ",
- //    Status: "Completed",
- //   },
- //   {
- //    "S.No.": 5,
- //    Name: "Sri Amresh kumar ",
- //    Designation: "Technical Assistant ",
- //    "Contact details": "amresh.me@nitp.ac.in ",
- //    Qualification: " Diploma in Mechanical Engineering & I.Sc",
- //    Status: "Completed",
- //   },
- //   {
- //    "S.No.": 6,
- //    Name: " Sri Vaidhnath Kumar",
- //    Designation: " Technical Assistant",
- //    "Contact details": "vaidhnath.me@nitp.ac.in ",
- //    Qualification: "B.Tech in Mechanical Engineering ",
- //    Status: "Completed",
- //   },
- //   {
- //    "S.No.": 7,
- //    Name: "Sri Subodh Kumar ",
- //    Designation: " Junior Assistant",
- //    "Contact details": "subodh.ja@nitp.ac.in",
- //    Qualification: " B.A. ( Honours ) in History",
- //    Status: "Completed",
- //   },
- //   {
- //    "S.No.": 8,
- //    Name: "Sri UpendraLal ",
- //    Designation: "Sr. Technician ",
- //    "Contact details": " upendralalnit@gmail.com",
- //    Qualification: "Intermediate  ",
- //    Status: "Completed",
- //   },
- //   {
- //    "S.No.": 9,
- //    Name: " Sri Bharat Bhushan Sharma",
- //    Designation: " Sr. Office Attendant",
- //    "Contact details": " ",
- //    Qualification: " ",
- //    Status: "Completed",
- //   },
- //   {
- //    "S.No.": 10,
- //    Name: "Sri Birendra Singh ",
- //    Designation: "Office Attendant, SG-II ",
- //    "Contact details": "Birendrasinghnitp@gmail.com",
- //    Qualification: " ",
- //    Status: "Completed",
- //   },
- //  ],
-}
-// export const Labs = [
-//   {
-//     content: (
-//       <>
-//         <h2>Laboratory Facilities Available in the Department:-</h2>
 
-//         <ol type="1">
-//           <li>Elements of Electrical Engg. Lab.</li>
-//           <li>Electrical M/C Lab</li>
-//           <li>Power System Protection Lab</li>
-//           <li>Power Electronics Lab</li>
-//           <li>Computer Lab</li>
-//           <li>Microprocessor and Microcontroller Lab</li>
-//           <li>Network theory Lab</li>
-//           <li>Control System Lab</li>
-//           <li>Measurement Lab</li>
-//           <li>High Voltage Lab</li>
-//           <li>SCADA Lab</li>
-//         </ol>
-//       </>
-//     ),
-//     // image: (
-//     //   <img src={${home}images/image_ele.jpg} style={{ width: "100%" }}></img>
-//     // ),
-//   },
-//   {
-//     content: (
-//       <>
-//         <h2>
-//           The following facilities are available in the department for carrying
-//           out research:-
-//         </h2>
-//         <br />
-//         <ol type="1">
-//           <li>
-//             A high end SCADA Lab is provided to the students to carry out
-//             experiments related to their research.
-//           </li>
-//           <li>
-//             Available simulation softwares include, MATLAB, Power World
-//             Simulator, Cadence-OrCAD, PSIM, LabView(NI).
-//           </li>
-//           <li>
-//             The hardware interface currently available in the department is
-//             Typhoon, HIL.
-//           </li>
-//           <li>
-//             Three high end Labs with state-of-the-art facilities are coming up
-//             shortly. This include, Advanced Industrial Drives Lab, Advanced
-//             Control System lab and Advanced Instrumentation lab.
-//           </li>
-//           <br />
-//           <br />
-//           The laboratory under this department includes Basic Electrical
-//           Engg.,Electrical Machines, Network Theory, Signals & Systems, and
-//           Instrumentation, High Voltage Engg., Microprocessor, Switchgear &
-//           protection labs. All labs are equipped with machines and instruments
-//           to meet the requirement of UG and PG course Curriculum as well as
-//           research & development work being under taken by students and faculty.
-//           The department has a Computer Lab with all hardware and software
-//           facilities to meet the requirements of system modeling and analog and
-//           digital circuit simulation. The department has Analog and Digital
-//           Circuit Simulation software for analysis, PCB layout, MATLAB software
-//           for modeling, simulation of signals and systems and Power World
-//           Simulator for power system study.
-//           <br />
-//           The aim of the department is to equip the different labs for modern
-//           course curriculum in the field of engineering & technology. In order
-//           to carryout research, development and consultancy work in active
-//           participation with the industry. The department is in process of
-//           establishing labs for computer based process control and digital
-//           signal processing. Very recently the department has established a high
-//           end SCADA lab with a expense of more than 5 crores which is used for
-//           final year ug and pg laboratories and also for research purpose by PhD
-//           scholars of the department.
-//           <br />
-//           We are planning to start training courses for industry personnel and
-//           academicians in this facility to generate revenue for the department/
-//           college.
-//         </ol>
-//       </>
-//     ),
-//   },
-// ]
+}
 
 export const Labs = {
  content: (
@@ -1823,42 +1655,6 @@ export const Achievements = [
  },
 ]
 
-// export const Staff = [
-//   {
-//    title: <h2>Non</h2>,
-//    content: (
-//     <table className="table-act">
-//      <thead>
-//       <tr className="syllabus-table-head">
-//        <th>S.No.</th>
-//        <th>Name</th>
-//        <th>Designation</th>
-//        <th>Contact details</th>
-//        <th>Qualification</th>
-//        {/* <th>Photo</th> */}
-//       </tr>
-//      </thead>
-//      <tbody>
-//       {Tables.staffmember.map((row, idx) => (
-//        <tr key={idx}>
-//         <td>{row["S.No."]}</td>
-//         <td>{row["Name"]}</td>
-//         <td>{row["Designation"]}</td>
-//         <td>{row["Contact details"]}</td>
-//         <td>{row["Qualification"]}</td>
-//         {/* <td>{
-//            <img
-//       src="https://drive.google.com/thumbnail?authuser=0&sz=w320&id=1ZTd8RKh4GeeBHokdnK0q01hw2sqo9uXB"
-//       alt="hodImage"
-//     />
-//      }</td> */}
-//        </tr>
-//       ))}
-//      </tbody>
-//     </table>
-//    ),
-//   },
-//  ]
 export const Research = [
  {
   content: (
@@ -1877,14 +1673,20 @@ export const Research = [
       </tr>
      </thead>{" "}
      <tbody>
-      {Tables.research.map((row, idx) => (
-       <tr key={idx}>
+  {Tables.research && Array.isArray(Tables.research) ? (
+    Tables.research.map((row, idx) => (
+      <tr key={idx}>
         <td>{row["Sr.No."]}</td>
         <td>{row["Specialization of the Research"]}</td>
-        <td>{row["Descriptive Key-word"]}</td>
-       </tr>
-      ))}
-     </tbody>
+      </tr>
+    ))
+  ) : (
+    <tr>
+      <td colSpan="2">No data available</td>
+    </tr>
+  )}
+</tbody>
+
     </table>
     <h3>
      Research area of Faculty wise for the Electrical Engineering
@@ -2118,60 +1920,4 @@ export const Activities = [
   ),
  },
 ]
-// export const News_Events = {
-//  content: (
-//   <>
-//    <h2>Workshop/Short Term Courses Organized:</h2>
-//    <ul type="circle">
-//     <li>
-//      Organized Faculty Development Program on <q>Power Electronics</q> through
-//      NKN during 11th to 20th Dec. 2017 at NIT Patna.
-//     </li>
-//     <br />
-//     <br />
 
-//     <li>
-//      Organized a Short Term Course on{" "}
-//      <q>Design of Switched Mode Power Converters</q> during 6th to 8th Feb. 2017
-//      at NIT Patna.
-//     </li>
-//     <br />
-//     <br />
-
-//     <li>
-//      Organized a Short Term Course on <q>Institute-Industry Interaction</q>{" "}
-//      during 5th to 9th Dec. 2016 at NIT Patna.
-//     </li>
-//     <br />
-//     <br />
-
-//     <li>
-//      Organized a Workshop on{" "}
-//      <q>
-//       Control Design, Simulation and Data Acquisition using Labview and Sensor
-//       Interfacing
-//      </q>{" "}
-//      during 5th to 6th April 2016 at NIT Patna.
-//     </li>
-//     <br />
-//     <br />
-
-//     <li>
-//      Organized a Workshop on <q>LabView and its Application</q>during 14th to
-//      18th March 2016 at NIT Patna.
-//     </li>
-//     <br />
-//     <br />
-
-//     <li>
-//      Organized a short term course on{" "}
-//      <q>
-//       Advanced Power Electronic Converters for Renewable Energy and Industrial
-//       Drives
-//      </q>{" "}
-//      during 14th to 18th Dec. 2015 at NIT Patna
-//     </li>
-//    </ul>
-//   </>
-//  ),
-// }

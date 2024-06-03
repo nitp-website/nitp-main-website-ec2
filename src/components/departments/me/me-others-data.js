@@ -475,7 +475,242 @@ const Tables = {
    Duration: "April 04, 2024",
   },
  ],
-
+ research: [{
+  "Sr.No.": 1,
+  "Research area": "Thermal and Fluid Engineering",
+  "Topics": "Renewable energy, I.C. Engine, Power Plant Engineering, Heat and Mass Transfer, Heat exchanger, Refrigeration and air conditioning, Hydraulic system, Automation, CFD, Biofuel, Fuel cell, Solar Energy, Multi-phase Fluid Flow, Thermal Management"
+},
+{
+  "Sr.No.": 2,
+  "Research area": "Solid Mechanics and Design Engineering",
+  "Topics": "CAD/CAM, Robotics, Control and automation, Finite Element Method, Impact Mechanics, Mechanical Vibration, Nonlinear dynamics, MEMS, Fault Diagnosis, Optimization, Vibration control, Composite Material, Biomechanics, Nanomechanics"
+},
+{
+  "Sr.No.": 3,
+  "Research area": "Manufacturing and Production Engineering",
+  "Topics": "Welding, Heat Treatment, Surface Engineering, Tribology, Additive Manufacturing, Composite Material, Machining Science, Nanotechnology, Non-conventional Manufacturing, Metal forming Technology, Casting, Friction Stir Welding, Material Science"
+},
+{
+  "Sr.No.": 4,
+  "Research area": "Industrial Engineering",
+  "Topics": "Quality Engineering, Supply chain Management, Operation Research, Industry 4.0/5, AI in Manufacturing, Data Analytics, Machine Learning"
+}
+],
+ faculty: 
+  [
+    {
+      "Sr.No.": 1,
+      "Name": "Om Prakash",
+      "Research specialization": "Thermal and Fluid Engineering",
+      "Research topics": "Biofuels, Renewable Energy, Internal combustion engine, Power Plant, Heat and Mass Transfer, Thermal Engineering",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=om.prakash@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 2,
+      "Name": "A. N. Sinha",
+      "Research specialization": "Manufacturing and Production Engineering",
+      "Research topics": "Welding, Heat treatment",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=ansinha@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 3,
+      "Name": "Prakash Chandra",
+      "Research specialization": "Thermal and Fluid Engineering",
+      "Research topics": "Heat Transfer, Porous Media, Solar Energy, Heat Exchanger",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=prakash@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 4,
+      "Name": "Amit Kumar",
+      "Research specialization": "Solid Mechanics and Design Engineering",
+      "Research topics": "CAD/CAM, Robotics",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=amit@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 5,
+      "Name": "M. N. Pandey",
+      "Research specialization": "Thermal and Fluid Engineering",
+      "Research topics": "Thermal Engineering, Automation",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=mnpandey@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 6,
+      "Name": "Shahid Mahmood",
+      "Research specialization": "Thermal and Fluid Engineering",
+      "Research topics": "Heat Transfer, Refrigeration, Air conditioning, Solar Energy",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=shahid@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 7,
+      "Name": "Arun Kumar",
+      "Research specialization": "Thermal and Fluid Engineering",
+      "Research topics": "Heat transfer, Heat exchanger, Power plant",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=arun@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 8,
+      "Name": "A. K. Das",
+      "Research specialization": "Manufacturing and Production Engineering",
+      "Research topics": "Manufacturing Engineering, Laser Surface Cladding and Surface Alloying, Laser Material Processing, Surface Engineering and Coating Technology, Tribological Behaviour of Materials, Welding of Advanced Materials, Nanotechnology, Materials Characterization, Composite Materials, Additive Manufacturing, Friction Stir Processing and Welding, Non-conventional Manufacturing.",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=akdas@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 9,
+      "Name": "Abhishek Singh",
+      "Research specialization": "Manufacturing and Production Engineering",
+      "Research topics": "Conventional and Unconventional Machining, Advanced and Hybrid Machining Processes, Machining of Advanced Materials, Processing and Characterization of Composite Materials, Welding, Composite Materials, Additive Manufacturing, Machine Learning",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=abhishek.singh@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 10,
+      "Name": "Nilamber Kumar Singh",
+      "Research specialization": "Solid Mechanics and Design Engineering",
+      "Research topics": "Materials and Structures, Impact Mechanics, Dynamic Behaviour of Materials, Additive Manufacturing, Finite Element Methods",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=nilambersingh@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 11,
+      "Name": "Vikas Upadhyay",
+      "Research specialization": "Manufacturing and Production Engineering",
+      "Research topics": "Conventional and Unconventional Machining, Friction Stir Welding, Composite Materials, Metal Additive Manufacturing, Machine Learning.",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=vikas@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 12,
+      "Name": "Anand Bhushan",
+      "Research specialization": "Solid Mechanics and Design Engineering",
+      "Research topics": "Nonlinear dynamics, Mechanical vibration, Nanomechanics, MEMS",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=anand.bhushan@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 13,
+      "Name": "Anupam Das",
+      "Research specialization": "Industrial Engineering",
+      "Research topics": "Quality Engineering, Supply Chain Management, Operations Management",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=anupam.das@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 14,
+      "Name": "Sharifuddin Mondal",
+      "Research specialization": "Solid Mechanics and Design Engineering",
+      "Research topics": "System optimization and Control, UIOs, Robust and adaptive estimation and control, Fault diagnosis and fault tolerant control of vehicle, aerospace and fuel cell systems, Optimization of manufacturing processes, Localization and control of mobile robots, Target tracking",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=sharifuddin@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 15,
+      "Name": "N. P. Mandal",
+      "Research specialization": "Thermal and Fluid Engineering",
+      "Research topics": "Hydraulic Systems, Control, Automation, Fluid Dynamics, Fluid Flows, Air Conditioning, CFD",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=nimai@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 16,
+      "Name": "V. K. Choubey",
+      "Research specialization": "Industrial Engineering",
+      "Research topics": "Supply Chain Management, Sustainability, Digital Supply Chain Management, Industry 4.0",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=vikas.choubey@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 17,
+      "Name": "Shailesh M Pandey",
+      "Research specialization": "Manufacturing and Production Engineering",
+      "Research topics": "Metrology, Tribology, Coating, Wear, Friction, Surface Modification, Industry 4.0/5.0",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=smp.me@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 18,
+      "Name": "Naresh Kumar",
+      "Research specialization": "Thermal and Fluid Engineering",
+      "Research topics": "Thermal Engineering",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=naresh@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 19,
+      "Name": "Anindya Malas",
+      "Research specialization": "Solid Mechanics and Design Engineering",
+      "Research topics": "Nonlinear Dynamics and Vibration Control",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=anindya@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 20,
+      "Name": "Yogesh Kumar",
+      "Research specialization": "Manufacturing and Production Engineering",
+      "Research topics": "Additive Manufacturing, Metal Forming Technologies",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=yogesh.me@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 21,
+      "Name": "Om Ji Shukla",
+      "Research specialization": "Industrial Engineering",
+      "Research topics": "Agent based modelling, Multi Agent System, Artificial intelligence in manufacturing, Operations research, Operations management, Supply chain Management, Data Analytics, E-waste management, Sustainable food supply chain management for Foxnut (Makhana) industry; Supply Chain Analytics in Healthcare Industry; Supply chain risk management in food industry; Sustainable E-waste supply chain management",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=omjishukla.me@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 22,
+      "Name": "Ambrish Maurya",
+      "Research specialization": "Manufacturing and Production Engineering",
+      "Research topics": "Continuous Casting, Solder Alloys, Phase Change Material, Metal Matrix Composites, Modelling of Continuous Casting process and Thermal Energy Storage System, Fabrication and Characterization of MMC and Solder Alloys",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=amaurya.me@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 23,
+      "Name": "Anmesh Kumar Srivastava",
+      "Research specialization": "Thermal and Fluid Engineering",
+      "Research topics": "I.C. Engines, Alternative Fuels for I.C. Engines, Emissions, Renewable Energy",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=anmesh.me@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 24,
+      "Name": "Chetan Kumar Hirwani",
+      "Research specialization": "Solid Mechanics and Design Engineering",
+      "Research topics": "Composite Material, Nonlinear Dynamics, FEM, Experimental mechanics",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=chetank.me@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 25,
+      "Name": "Sonu Rajak",
+      "Research specialization": "Industrial Engineering",
+      "Research topics": "Supply Chain Management and Additive Manufacturing, Circular Supply Chain, Circular Economy, Industry 4.0/5., Wire-arc Additive Manufacturing",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=sonu.me@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 26,
+      "Name": "Ravi Kumar",
+      "Research specialization": "Thermal and Fluid Engineering",
+      "Research topics": "Modelling and Optimization of hydropower plants, Hydro Turbine Design, Designing & testing of hydro mechanical equipment's, Cost Optimization, Reliability and Life Cycle Analysis, Solar PVT Energy System, Biogas/Biomass, Renewable Energy, Hybrid Energy.",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=ravikumar.me@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 27,
+      "Name": "Achinta Sarkar",
+      "Research specialization": "Thermal and Fluid Engineering",
+      "Research topics": "Renewable Energy Conversion: Wind Energy, Solar Energy, Ocean Wave Energy, and Green Fuel Preparation, Energy Storage System Design: Battery, Thermal, and Fuel Cell Systems, Engine Combustion and Performance, Heat Exchanger Design and Development",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=achinta.me@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 28,
+      "Name": "Tanmoy Mondal",
+      "Research specialization": "Thermal and Fluid Engineering",
+      "Research topics": "Computational Fluid Mechanics and Heat Transfer, Turbulence Modelling, Natural and Mixed Convection Flows, and Multiphase Flows and Heat Transfer",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=tanmoy.me@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 29,
+      "Name": "Qaisar Raza",
+      "Research specialization": "Thermal and Fluid Engineering",
+      "Research topics": "Multiphase heat transfer, thermal management, bubble dynamics, interfacial science, design and development of vapour chamber, pool boiling with binary mixtures, capillary-fed boiling in porous wicks",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=qraza.me@nitp.ac.in"
+    },
+    {
+      "Sr.No.": 30,
+      "Name": "Sunil Singh Rana",
+      "Research specialization": "Thermal and Fluid Engineering",
+      "Research topics": "Thermal and Dynamic Mechanical Analysis; Bio-nanocomposites/Polymer Composites: Synthesis, Analysis and Characterization",
+      "Faculty Profile": "https://nitp.ac.in/profile?id=sunilsingh.me@nitp.ac.in"
+    }
+  
+  
+ ],
  staffmember: [
   {
    "S.No.": 1,
@@ -845,3 +1080,76 @@ export const Activities = [
   ),
  },
 ]
+export const Research = [
+  {
+    
+    content: (
+      <>
+        <h3>Research area of Mechanical Engineering Department</h3>
+        <table className="table-act">
+          <thead>
+            <tr className="syllabus-table-head">
+              <th>Sr. No.</th>
+              <th>Research area</th>
+              <th>Topics</th>
+            </tr>
+          </thead>
+          <tbody>
+            {Tables.research && Tables.research.length > 0 ? (
+              Tables.research.map((row, idx) => (
+                <tr key={idx}>
+                  <td>{row["Sr.No."]}</td>
+                  <td>{row["Research area"]}</td>
+                  <td>{row["Topics"]}</td>
+                </tr>
+              ))
+            ) : (
+              <tr>
+                <td colSpan="3">No data available</td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+        <h3>Research area of Faculty wise for the Electrical Engineering Department:</h3>
+        <table className="table-act">
+  <thead>
+    <tr className="syllabus-table-head">
+      <th>Sl. No.</th>
+      <th>Name</th>
+      <th>Research specialization</th>
+      <th>Research topics</th>
+      <th>Faculty Profile</th>
+    </tr>
+  </thead>
+  <tbody>
+    {Tables.faculty && Tables.faculty.length > 0 ? (
+      Tables.faculty.map((row, idx) => (
+        <tr key={idx}>
+          <td>{row["Sr.No."]}</td>
+          <td>{row["Name"]}</td>
+          <td>{row["Research specialization"]}</td>
+          <td>{row["Research topics"]}</td>
+          <td>
+            <a href={row["Faculty Profile"]}>
+              View Profile
+            </a>
+          </td>
+        </tr>
+      ))
+    ) : (
+      <tr>
+        <td colSpan="5">No data available</td>
+      </tr>
+    )}
+  </tbody>
+</table>
+
+
+      </>
+    ),
+  },
+];
+
+
+
+
