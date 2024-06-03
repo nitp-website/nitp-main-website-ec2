@@ -5,8 +5,8 @@ import Facultypage from "../components/departments/faculty"
 
 const OtherEmployeespage = () => (
  <Layout>
-  <SEO title="Employees" />
-  <Facultypage url="others" title="Employees of NIT Patna" />
+  <SEO title="Staffs" />
+  <Facultypage url="others" title="Staffs of NIT Patna" />
  </Layout>
 )
 
