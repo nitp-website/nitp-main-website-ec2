@@ -1,7 +1,7 @@
 import React from "react"
 import { Achievements, Activities, Labs, Staff } from "./me-others-data"
 
-import { LabImages } from "./me-others-data"
+import { LabImages , Research,} from "./me-others-data"
 import Slider from "../../Slider/Slider"
 
 export const routeName = "me"
@@ -200,8 +200,14 @@ export const activities = () => {
 //   )
 //  }
 export const research = () => {
- return <></>
-}
+    return (
+     <>
+      <div className="rowmarl3" style={{ overflow: "auto" }}>
+       {Research[0].content}
+      </div>
+     </>
+    )
+   }
 export const staff = () => {
  return (
   <>

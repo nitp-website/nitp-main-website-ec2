@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { navigate } from "gatsby"
 
+
 const NotFoundPage = () => {
  const [second, setSecond] = useState(6)
  function manageTime() {
@@ -25,7 +26,8 @@ const NotFoundPage = () => {
   <Layout>
    <SEO title="404: Not found" />
    <h1>NOT FOUND</h1>
-   <p>
+   <img src="./error-404.png"> </img>
+   <p>``
     You requested a URL which does not exist. You are being redirected to
     homepage in {second}s.
    </p>
