@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import SEO from "../components/seo";
 import Facultyprofile from "../components/global/facultyprofile";
