@@ -309,6 +309,24 @@ const DataNotice = [
 // ]
 
 const Admissions = [
+  {
+    heading: "Admissions",
+    title:
+     "For Admissions in B.Tech./Dual Degree/B.Arch. [ JoSAA Counselling 2024 ]",
+    data: [
+     {
+      para:
+       "The prospective candidates are advised to visit the JoSSA website regularly for updates and other details regarding the online counseling process.",
+      link: "https://josaa.nic.in/",
+     },
+     {
+      para:
+       "Contact Details: (Email ID: acad.help@nitp.ac.in Contact: 0612 2371715 Extension no 172) PI In-charge: Prof. M. P. Singh Contact: 0612-2372715 (Ext. 172), acad.help@nitp.ac.in PI Co In-charge: Prof. A R Quaff, 0612-2372715 (Ext. 171), arquaff@nitp.ac.in",
+      link: "",
+     },
+
+    ],
+   },
  {
   heading: "Admissions",
   title:
@@ -334,16 +352,8 @@ const Admissions = [
     link:
      "https://drive.google.com/file/d/1qSQMYVRWFoWXad4Z765LtsPMXBofYKzK/view",
    },
-   //  {
-   //   para: "Fee Details: Link-2",
-   //   link:
-   //    "https://drive.google.com/file/d/129jTHCY8iNvkSqg6QQz3y12otgsSco32/view?usp=share_link",
-   //  },
-   //  {
-   //   para: "M.Tech/MURP (PG) REGULATION",
-   //   link:
-   //    "https://drive.google.com/file/d/1tQ528Hqf7wP3ZFUdiurzdJQeiVd8QPKL/view?usp=share_link",
-   //  },
+   
+    
   ],
  },
  ,

@@ -131,7 +131,7 @@ const Home = [
    },
    {
     url: "/otherEmployees",
-    title: "Employees",
+    title: "Staffs",
    },
   ],
  },

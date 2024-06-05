@@ -26,11 +26,11 @@ const Mesyllabus = props => {
         <h1 style={{ marginBottom: `1rem` }}>Syllabus</h1>
         <h2 data-aos="zoom-in-right"> -Mechanical Engineering</h2>
         <ul className="rowmarl3">
-         {/* <li>
+         <li>
           <a href="https://docs.google.com/document/d/1pxbOvI1TdzjxQuFC5EHvV6aUoif3-bqR/edit?usp=sharing&ouid=110446457812712094222&rtpof=true&sd=true">
-           B.Tech_Course_Structure_2021 onwards - (2024 April update)
+           B.Tech_Course_Structure_2021 - (2024 April update)
           </a>
-         </li> */}
+         </li>
          <li>
           <a href="https://docs.google.com/document/d/1FraVT4Es8O1UgdmTafqyKd8NLzeTweE5/edit?usp=drive_link&ouid=110446457812712094222&rtpof=true&sd=true">
            B.Tech_Course_Structure_2022 onwards - (2024 April update)
