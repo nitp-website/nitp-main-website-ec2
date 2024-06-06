@@ -312,7 +312,7 @@ const Admissions = [
   {
     heading: "Admissions",
     title:
-     "For Admissions in B.Tech./Dual Degree/B.Arch. [ JoSAA Counselling 2024 ]",
+     "For Admissions in B.Tech./Dual Degree/B.Arch. [ JoSAA Counselling 2024 ]test",
     data: [
      {
       para:
