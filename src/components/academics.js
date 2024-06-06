@@ -58,7 +58,11 @@ const Academicspage = () => {
                 {acadData.Admissions.map((e) => (
                   <div className="row rowmarr3 digital">
                     <div>
+                    {e.title.startsWith("Archive") ? (
+                <div style={{ fontSize: '45px', color: 'black' }}>{e.title}</div>
+              ) : (
                       <h3>{e.title}</h3>
+              )}
 
                       {e.notice && (
                         <NoticeStyle>
