@@ -207,7 +207,33 @@ export const Events = () => {
 }
 
 export const NewsAnnouncements = () => {
- return <p>News And Announcements</p>
+return(
+    <div>
+     
+
+      <div>
+        <h3>MSCA Doctoral Networks - 
+        
+          
+          <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/doctoral-networks" target="_blank" rel="noopener noreferrer">
+          [click here ]
+          </a>.
+        </h3>
+      </div>
+
+      <div>
+        <h3>Royal Society Grants Received by NIT Patna Professors</h3>
+        <p style={{ marginBottom: "16px" }}>
+          Dr. Amit Kumar Singh and Dr. Jyoti Prakash Singh from the Department of Computer Science and Engineering, National Institute of Technology Patna (NITP) received grants of €12,000 under the International Exchanges award for overseas travel between collaborators in the United Kingdom (UK) and India. The grant is mainly received for the research collaboration over the project “Robust watermarking scheme in medical images for smart healthcare”, which is currently funded by The Royal Society, United Kingdom. This collaborative research between National Institute of Technology Patna, India, and University of Leicester, UK mainly focuses on developing effective copyright protection methods that can offer improved robustness, invisibility, capacity, and security with high accuracy for smart healthcare applications.
+        </p>
+       <div style={{ textAlign: "center" }}>
+        <img
+             src="https://web.nitp.ac.in/intl-affair/faculty-visit.jpg"
+             style={{ border: "1px solid #333" }}
+            ></img>
+        </div>
+      </div>
+    </div>)
 }
 
 export const Partnership = () => {
@@ -228,6 +254,14 @@ export const Partnership = () => {
           className={course == "ongoing" ? "btnactive" : ""}
          >
           Ongoing MoUs
+         </button>
+         <button
+          onClick={() => {
+           setCourse("MoUinProcess")
+          }}
+          className={course == "MoUinProcess" ? "btnactive" : ""}
+         >
+          MoU in process
          </button>
          <button
           onClick={() => {
@@ -255,6 +289,42 @@ export const Partnership = () => {
               MoU between Pennsylvania State University, USA & NIT Patna.
              </a>
             </li>
+           </ul>
+          </div>
+         </>
+        )}
+        {course === "MoUinProcess" && (
+         <>
+          <div className="layoutrow">
+           <h1 className="rowmarl3" data-aos="zoom-in-right"></h1>
+          </div>
+          <div className="syllabus-bullets">
+           <ul className="rowmarl3">
+           <li>
+          <a href="https://aicybersecuritycenter.com/" style={{ color: "blue" }}>
+            International Center for AI and Cyber Security Research and Innovations (CCRI), Asia University, Taiwan
+          </a>
+        </li>
+        <li>
+          <a href="https://www.unical.it/" style={{ color: "blue" }}>
+            UNIVERSITA’ DELLA CALABRIA, Italy
+          </a>
+        </li>
+        <li>
+          <a href="https://www.unifi.it/" style={{ color: "blue" }}>
+            University of Florence, Italy
+          </a>
+        </li>
+        <li>
+          <a href="https://eiu.edu.vn/en/" style={{ color: "blue" }}>
+            Eastern International University, Vietnam
+          </a>
+        </li>
+        <li>
+          <a href="https://www.ufscar.br/" style={{ color: "blue" }}>
+            University of São Carlos (UFSCar), Brazil
+          </a>
+        </li>
            </ul>
           </div>
          </>
