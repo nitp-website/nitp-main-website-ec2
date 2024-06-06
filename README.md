@@ -30,7 +30,7 @@ To get a local copy of the project up and running, follow these steps:
  
    ```bash
    git clone https://github.com/nitp-website/nitp-main-website-ec2
-   cd NITP-Website
+   cd nitp-main-website-ec2
    ```
 
 2. **Install dependencies:**
