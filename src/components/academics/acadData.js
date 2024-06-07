@@ -352,14 +352,36 @@ const Admissions = [
     link:
      "https://drive.google.com/file/d/1qSQMYVRWFoWXad4Z765LtsPMXBofYKzK/view",
    },
-   
+  
     
   ],
  },
- ,
+ //adding sepertor
  {
   heading: "Admissions",
-  title: "Miscellaneous",
+  title: "**************************************************************************************************************************************************************************************************************************************************************************************************",
+  data: [
+    // {
+    //   para: "",
+    //   link: "",
+    // },
+  ],
+},
+
+//adding archive so that users get the ideas that below things are outdated 
+{
+  heading: "",
+  title: "Archive : ",
+  data: [
+    // {
+    //   // para: "******************************",
+    //   // link: "",
+    // },
+  ],
+},
+ {
+  heading: "Admissions",
+  title: "Miscellaneous ",
   data: [
    {
     para: "Change of  Branch for the session 2023-24",
@@ -375,7 +397,7 @@ const Admissions = [
  },
  {
   heading: "Admissions",
-  title: "JoSAA/CSAB/DASA-2023",
+  title: "JoSAA/CSAB/DASA-2023 ",
   notice:
    "Notice: There will be NO physical reporting for UG admission through JoSAA/CSAB/DASA-2023 on 15.08.2023 (Independence Day)",
   data: [
@@ -409,7 +431,7 @@ const Admissions = [
  },
  {
   heading: "Admissions",
-  title: "CCMT Counselling 2023",
+  title: "CCMT Counselling 2023 ",
   data: [
    {
     para: "CCMT 2023",
@@ -446,7 +468,7 @@ const Admissions = [
 
 const Relaxation = [
  {
-  heading: "Concessions",
+  heading: "Concessions ",
   data: [
    {
     title_main: "Concessions Provided for Students",
