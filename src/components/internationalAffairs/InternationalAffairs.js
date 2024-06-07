@@ -212,7 +212,7 @@ return(
       <div>
         <h3>MSCA Doctoral Networks</h3>
         
-          <p>The objective of Doctoral Networks is to implement doctoral programmes by partnerships of organisations from different sectors across Europe and beyond to train highly skilled doctoral candidates, stimulate their creativity, enhance their innovation capacities and boost their employability in the long-term. Refer the url for more detail at <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/doctoral-networks" target="_blank" rel="noopener noreferrer">
+          <p>The objective of Doctoral Networks is to implement doctoral programmes by partnerships of organisations from different sectors across Europe and beyond to train highly skilled doctoral candidates, stimulate their creativity, enhance their innovation capacities and boost their employability in the long-term. Refer the url for more detail at <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/doctoral-networks" target="_blank" rel="noopener noreferrer" style={{ color:"blue"}}>
           MSCA
           </a>.</p>
           
