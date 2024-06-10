@@ -316,12 +316,12 @@ const Admissions = [
     data: [
      {
       para:
-       "The prospective candidates are advised to visit the JoSSA website regularly for updates and other details regarding the online counseling process.",
+       "The prospective candidates are advised to visit the JoSSA/CSAB website regularly for updates and other details regarding the online counseling process.",
       link: "https://josaa.nic.in/",
      },
      {
       para:
-       "Contact Details: (Email ID: acad.help@nitp.ac.in Contact: 0612 2371715 Extension no 172) PI In-charge: Prof. M. P. Singh Contact: 0612-2372715 (Ext. 172), acad.help@nitp.ac.in PI Co In-charge: Prof. A R Quaff, 0612-2372715 (Ext. 171), arquaff@nitp.ac.in",
+       "Contact Details: (Email ID: acad.help@nitp.ac.in Contact: 0612 2372715 Extension no 166) Center In-charge: Prof. Sanjeev Sinha Contact: 0612-2372715 (Ext. 151), Dy. Center In-charge: Prof. M P Singh, 0612-2372715 (Ext-201.) and Dy.Center In-Charge: Prof. Bharat Gupta 0612-2372715 (Ext-301.)",
       link: "",
      },
 
