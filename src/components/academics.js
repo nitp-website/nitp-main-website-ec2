@@ -49,47 +49,56 @@ const Academicspage = () => {
           tab={tab.slice(0, 10) === "programmes" ? tab : "admissions"}
         />
         <div className="mainDiv">
-          {view === "admissions" && (
-            <div className="layoutrow layoutrow1 rowmarl3" id="admission">
-              <div>
-                <div className="row">
-                  <h1 style={{ marginBottom: `1rem` }}>Admissions</h1>
-                </div>
-                {acadData.Admissions.map((e) => (
-                  <div className="row rowmarr3 digital">
-                    <div>
-                    {e.title.startsWith("Archive") ? (
-                <div style={{ fontSize: '45px', color: 'black' }}>{e.title}</div>
-              ) : (
-                      <h3>{e.title}</h3>
-              )}
+        {view === "admissions" && (
+  <div className="layoutrow layoutrow1 rowmarl3" id="admission">
+    <div>
+      <div className="row">
+        <h1 style={{ marginBottom: `1rem`, fontSize: '36px' }}>Admissions</h1>
+      </div>
+      {acadData.Admissions.map((e, index) => (
+        <div className="row rowmarr3 digital" key={index}>
+          <div>
+            {e.heading && e.heading.startsWith("Archive") ? (
+              <div style={{ fontSize: '60px', color: 'black' }}>{e.heading}</div>
+            ) : (
+              <>
+                {e.heading && <h3 style={{ fontSize: '32px' }}>{e.heading}</h3>}
+                {e.title && <h4 style={{ fontSize: '20px' }}>{e.title}</h4>}
+              </>
+            )}
+            {e.notice && (
+              <NoticeStyle>
+                <p style={{ paddingRight: "24px", fontSize: '18px' }}>
+                  <img id="flag" src={flag} alt="f" />
+                  <a style={{ color: "OrangeRed" }}>{e.notice}</a>
+                </p>
+              </NoticeStyle>
+            )}
+           {e.data.map((item, itemIndex) => (
+  <div key={itemIndex}>
+    {item.para === "a. First Round:" || item.para === "b. Second Round:" || item.para === "Course: B.Tech / BArch / MTech / March / MURP / PhD" ? (
+      <h4 style={{ fontSize: '18px' }}>{item.para}</h4>
+    ) : (
+      <li>
+        <a
+          href={item.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: `none` }}
+        >
+          {item.para}
+        </a>
+      </li>
+    )}
+  </div>
+))}
 
-                      {e.notice && (
-                        <NoticeStyle>
-                          <p style={{ paddingRight: "24px" }}>
-                            <img id="flag" src={flag} alt="f" />
-                            <a style={{ color: "OrangeRed" }}>{e.notice}</a>
-                          </p>
-                        </NoticeStyle>
-                      )}
-                      {e.data.map((item) => (
-                        <>
-                          <a
-                            href={item.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            style={{ textDecoration: `none` }}
-                          >
-                            <li>{item.para}</li>
-                          </a>
-                        </>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+)}
 
             
       {view.slice(0, 10) == "programmes" ? (

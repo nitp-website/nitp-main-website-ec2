@@ -1681,6 +1681,8 @@ export const Research = [
       <tr key={idx}>
         <td>{row["Sr.No."]}</td>
         <td>{row["Specialization of the Research"]}</td>
+        <td>{row["Descriptive Key-word"]}</td>
+
       </tr>
     ))
   ) : (
