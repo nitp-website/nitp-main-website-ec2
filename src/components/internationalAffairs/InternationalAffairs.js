@@ -210,6 +210,16 @@ export const NewsAnnouncements = () => {
 return(
     <div>
       <div>
+        <h3>Study in India (SII) Scheme</h3>
+        <p style={{ marginBottom: "16px" }}>
+        The Study in India is a project of the Government of India under the aegis of the Ministry of Education. Foreign students applying to the SII programme get the opportunity to avail of financial assistance in the form either Study in India Scholarship or Fee Waiver. The SII Scholarship worth USD 3200 is offered to meritorious students on the basis of scores of PRAGATII Exam. Furthermore, students who do not get the SII Scholarship can still avail Fee Waiver that is granted across 3 categories by the institutes. To know more about the SII programme and Study in India Scholarship, please visit <a href="https://studyinindia.gov.in/" target="_blank" rel="noopener noreferrer" style={{ color:"blue"}}>
+         SII Scheme
+          </a>
+        </p>
+      
+        
+      </div>
+      <div>
         <h3>MSCA Doctoral Networks</h3>
         
           <p>The objective of Doctoral Networks is to implement doctoral programmes by partnerships of organisations from different sectors across Europe and beyond to train highly skilled doctoral candidates, stimulate their creativity, enhance their innovation capacities and boost their employability in the long-term. Refer the url for more detail at <a href="https://marie-sklodowska-curie-actions.ec.europa.eu/actions/doctoral-networks" target="_blank" rel="noopener noreferrer" style={{ color:"blue"}}>
@@ -231,6 +241,8 @@ return(
             ></img>
         </div>
       </div>
+
+      
     </div>)
 }
 
