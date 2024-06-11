@@ -230,6 +230,12 @@ const Academics = [
   data: "admissions",
   id: "three",
   sub: [
+    // //change
+    {
+          url: "/academics",
+          title: "Study in India (SII)",
+          data: "admissions",
+        },
    {
     url: "/academics",
     title: "CCMT/JoSSA/CSAB",
