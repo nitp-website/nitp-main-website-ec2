@@ -24,7 +24,15 @@ const Facultyprofile = ({ url }) => {
     workExperience: [],
     phdCandidates: []
   });
-
+// Helper function to format each article
+function formatArticle(article) {
+ 
+  return `${article.authors}, "${article.title}," ${article.journal_name}, (${article.year})`;
+}
+// Helper function to format each conference
+function formatConference(conference) {
+  return `${conference.authors}, "${conference.title}," ${conference.year}, ${conference.booktitle}`;
+}
   const fetchData = useCallback(async () => {
     try {
       const res = await axios.get(url);
@@ -248,7 +256,40 @@ const Facultyprofile = ({ url }) => {
               </div>
             </div>
           </div>
-
+          {/* Render Work Experience if available */}
+          {data.workExperience.length > 0 && (
+            <div className="fac-card" data-aos="fade-up">
+              <h3>Work Experience</h3>
+              <div className="factable">
+                <table>
+                  {data.workExperience.map((exp, index) => (
+                    <tr key={index}>
+                      <td>{exp.work_experiences}</td>
+                      <td>{exp.institute}</td>
+                      <td>{exp.start} - {exp.end}</td>
+                    </tr>
+                  ))}
+                </table>
+              </div>
+            </div>
+          )}
+          {/* Render Education if available */}
+         {data.qualification.length > 0 && (
+            <div className="fac-card" data-aos="fade-up">
+              <h3>Education</h3>
+              <div className="factable">
+                <table>
+                  {data.qualification.map((edu, index) => (
+                    <tr key={index}>
+                      <td>{edu.certification}</td>
+                      <td>{edu.institution}</td>
+                      <td>{edu.passing_year}</td>
+                    </tr>
+                  ))}
+                </table>
+              </div>
+            </div>
+          )}
           {/* Render Subjects Taught if available */}
           {data.subjects.length > 0 && (
             <div className="fac-card" data-aos="fade-up">
@@ -268,64 +309,8 @@ const Facultyprofile = ({ url }) => {
               </div>
             </div>
           )}
-
-          {/* Render Memberships if available */}
-          {data.memberships.length > 0 && (
-            <div className="fac-card" data-aos="fade-up">
-              <h3>Memberships</h3>
-              <div className="factable">
-                <table>
-                  <tbody>
-                    {data.memberships.map((membership, index) => (
-                      <tr key={index}>
-                        <td>{membership.membership_society}</td>
-                        <td>{membership.start} - {membership.end}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          )}
-
-         {/* Render Education if available */}
-         {data.qualification.length > 0 && (
-            <div className="fac-card" data-aos="fade-up">
-              <h3>Education</h3>
-              <div className="factable">
-                <table>
-                  {data.qualification.map((edu, index) => (
-                    <tr key={index}>
-                      <td>{edu.certification}</td>
-                      <td>{edu.institution}</td>
-                      <td>{edu.passing_year}</td>
-                    </tr>
-                  ))}
-                </table>
-              </div>
-            </div>
-          )}
-{/* Render PG/UG Projects Supervised if available */}
-{data.pg_ug.length > 0 && (
-            <div className="fac-card" data-aos="fade-up">
-              <h3>PG/UG Projects Supervised</h3>
-              <div className="factable">
-                <table>
-                  {data.pg_ug.map((project, index) => (
-                    <tr key={index}>
-                      <td>{project.student_name}</td>
-                      <td>{project.student_program}</td>
-                      <td>{project.project_topic}</td>
-                      <td>{project.start_year} - {project.completion_year}</td>
-                    </tr>
-                  ))}
-                </table>
-              </div>
-            </div>
-          )}
-
-          {/* Render Projects if available */}
-          {data.projects.length > 0 && (
+ {/* Render Projects if available */}
+ {data.projects.length > 0 && (
             <div className="fac-card" data-aos="fade-up">
               <h3>Projects</h3>
               <div className="factable">
@@ -343,8 +328,30 @@ const Facultyprofile = ({ url }) => {
             </div>
           )}
 
-          {/* Render Publications if available */}
-          {data.publications.length > 0 && (
+
+         
+
+
+           {/* Render Patents if available */}
+           {data.patents.length > 0 && (
+            <div className="fac-card" data-aos="fade-up">
+              <h3>Patents</h3>
+              <div className="factable">
+                <table>
+                  {data.patents.map((patent, index) => (
+                    <tr key={index}>
+                      <td>{patent.title}</td>
+                      <td>{patent.citation_key}</td>
+                      <td>{patent.year}</td>
+                      <td>{patent.authors}</td>
+                    </tr>
+                  ))}
+                </table>
+              </div>
+            </div>
+          )}
+                    {/* Render Publications if available */}
+                    {data.publications.length > 0 && (
             <div className="fac-card" data-aos="fade-up">
               <h3>Publications</h3>
               <div className="factable">
@@ -382,25 +389,20 @@ const Facultyprofile = ({ url }) => {
               </div>
             </div>
           )}
+{/* Render Articles if available */}
+{data.articles.length > 0 && (
+  <div className="fac-card" data-aos="fade-up">
+    <h3>Articles</h3>
+    <div className="factable">
+      {data.articles.map((article, index) => (
+        <div key={index} className="article">
+          <p>{formatArticle(article)}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+)}
 
-           {/* Render Patents if available */}
-           {data.patents.length > 0 && (
-            <div className="fac-card" data-aos="fade-up">
-              <h3>Patents</h3>
-              <div className="factable">
-                <table>
-                  {data.patents.map((patent, index) => (
-                    <tr key={index}>
-                      <td>{patent.title}</td>
-                      <td>{patent.citation_key}</td>
-                      <td>{patent.year}</td>
-                      <td>{patent.authors}</td>
-                    </tr>
-                  ))}
-                </table>
-              </div>
-            </div>
-          )}
 
           {/* Render Books if available */}
           {data.books.length > 0 && (
@@ -422,17 +424,34 @@ const Facultyprofile = ({ url }) => {
 
 
           {/* Render Conferences if available */}
-          {data.conferences.length > 0 && (
+{data.conferences.length > 0 && (
+  <div className="fac-card" data-aos="fade-up">
+    <h3>Conferences</h3>
+    <div className="factable">
+      <table>
+        <tbody>
+          {data.conferences.map((conference, index) => (
+            <tr key={index}>
+              <td>{formatConference(conference)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+)}
+
+                   {/* Render Memberships if available */}
+                   {data.memberships.length > 0 && (
             <div className="fac-card" data-aos="fade-up">
-              <h3>Conferences</h3>
+              <h3>Memberships</h3>
               <div className="factable">
                 <table>
                   <tbody>
-                    {data.conferences.map((conference, index) => (
+                    {data.memberships.map((membership, index) => (
                       <tr key={index}>
-                        <td>{conference.title}</td>
-                        <td>{conference.authors}</td>
-                        <td>{conference.year}</td>
+                        <td>{membership.membership_society}</td>
+                        <td>{membership.start} - {membership.end}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -440,28 +459,7 @@ const Facultyprofile = ({ url }) => {
               </div>
             </div>
           )}
-
-          {/* Render Articles if available */}
-          {data.articles.length > 0 && (
-            <div className="fac-card" data-aos="fade-up">
-              <h3>Articles</h3>
-              <div className="factable">
-                <table>
-                  <tbody>
-                    {data.articles.map((article, index) => (
-                      <tr key={index}>
-                        <td>{article.title}</td>
-                        <td>{article.authors}</td>
-                        <td>{article.year}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          )}
-
-          
+         
           {/* Render Professional Services if available */}
           {data.services.length > 0 && (
             <div className="fac-card" data-aos="fade-up">
@@ -485,26 +483,19 @@ const Facultyprofile = ({ url }) => {
               
             </div>
           )}
-
-
-           {/* Render Work Experience if available */}
-           {data.workExperience.length > 0 && (
+          {/* Render Current Administrative Responsibilities if available */}
+          {data.currResponsibility.length > 0 && (
             <div className="fac-card" data-aos="fade-up">
-              <h3>Work Experience</h3>
-              <div className="factable">
-                <table>
-                  {data.workExperience.map((exp, index) => (
-                    <tr key={index}>
-                      <td>{exp.work_experiences}</td>
-                      <td>{exp.institute}</td>
-                      <td>{exp.start} - {exp.end}</td>
-                    </tr>
-                  ))}
-                </table>
-              </div>
+              <h3>Current Administrative Responsibilities</h3>
+              <ul>
+                {data.currResponsibility.map((responsibility, index) => (
+                  <li key={index}>{responsibility.curr_responsibility}</li>
+                ))}
+              </ul>
             </div>
           )}
 
+          
           {/* Render Past Administrative Responsibilities if available */}
           {data.pastResponsibility.length > 0 && (
             <div className="fac-card" data-aos="fade-up">
@@ -516,6 +507,15 @@ const Facultyprofile = ({ url }) => {
               </ul>
             </div>
           )}
+
+
+
+
+          
+ 
+
+
+           
 
 
            {/* Render Ph.D. Candidates if available */}
@@ -535,7 +535,24 @@ const Facultyprofile = ({ url }) => {
               </div>
             </div>
           )}
-
+{/* Render PG/UG Projects Supervised if available */}
+{data.pg_ug.length > 0 && (
+            <div className="fac-card" data-aos="fade-up">
+              <h3>PG/UG Projects Supervised</h3>
+              <div className="factable">
+                <table>
+                  {data.pg_ug.map((project, index) => (
+                    <tr key={index}>
+                      <td>{project.student_name}</td>
+                      <td>{project.student_program}</td>
+                      <td>{project.project_topic}</td>
+                      <td>{project.start_year} - {project.completion_year}</td>
+                    </tr>
+                  ))}
+                </table>
+              </div>
+            </div>
+          )}
  {/* Render Publications PDF Preview if available */}
  {data.publications.length > 0 && data.publications[0].pub_pdf && (
             <div className="fac-card" data-aos="fade-up">
