@@ -310,9 +310,83 @@ const DataNotice = [
 
 const Admissions = [
   {
-    heading: "Admissions",
+    heading: "Admission in UG/PG/PhD programme through Study In India (SII)",
+    title: "1. Minimum Qualification:",
+    data: [
+      {
+        para: "For Admission in B.Tech/DD(B.Tech+M.Tech)/B.Arch Programme: PCM with 65% or  Diploma in Relevant branch with 65%  Valid JEE(Main) score or Institute level Written Test/Interview",
+        link: "",
+      },
+      {
+        para: "For Admission in M.Tech/M.Arch/MURP Programme: UG in any branch with 65% along with Valid GATE Score in relevant GATE paper or Institute level Written Test/Interview",
+        link: "",
+      },
+      {
+        para: "For Admission in PhD: PG in any branch with 65% along with Valid GATE Score in relevant GATE paper or Institute level Written Test/Interview",
+        link: "",
+      },
+    ],
+  },
+  {
+    heading: "",
+    title: "2. Admission Schedule:",
+    data: [
+      
+      {
+        para: " Last date of registration: 25 June 2024",
+        link: "",
+      },
+      {
+        para: " Last date of Scrutiny of applications (select/Reject): 27 June 2024, 5 PM",
+        link: "",
+      },
+      {
+        para: " Missing documents to be uploaded: 28 June 2024, 5 PM",
+        link: "",
+      },
+      {
+        para: " Last date of confirmation for sending admission letter: 28 June 2024",
+        link: "",
+      },
+      
+    ],
+  },
+  {
+    heading: "",
+    title: "3. Course Fees:",
+    data: [
+      {
+        para: "Course: B.Tech / BArch / MTech / March / MURP / PhD",
+        link: "",
+      },
+      {
+        para: "Annual Tuition Fee (SAARC Country): $5000 per annum",
+        link: "",
+      },
+      {
+        para: "Annual Tuition Fee (Non-SAARC Country): $8000 per annum",
+        link: "",
+      },
+      {
+        para: "Total Annual Tuition Fee* (SAARC Country): $6779 per annum",
+        link: "",
+      },
+      {
+        para: "Total Annual Tuition Fee* (Non-SAARC Country): $9779 per annum",
+        link: "",
+      },
+      {
+        para: "Miscellaneous Cost (if any): $100 for all",
+        link: "",
+      },
+    ],
+  },
+ 
+ 
+  {
+    heading: "For Admissions in B.Tech./Dual Degree/B.Arch. [ JoSAA Counselling 2024 ]",
     title:
-     "For Admissions in B.Tech./Dual Degree/B.Arch. [ JoSAA Counselling 2024 ]",
+     "",
     data: [
      {
       para:
@@ -328,9 +402,9 @@ const Admissions = [
     ],
    },
  {
-  heading: "Admissions",
+  heading: "For Admissions in M.Tech./M.Arch./M.Plan. (CCMT-2024),CCMT Counselling 2024",
   title:
-   "For Admissions in M.Tech./M.Arch./M.Plan. (CCMT-2024),CCMT Counselling 2024",
+   "",
   data: [
    {
     para:
@@ -358,8 +432,8 @@ const Admissions = [
  },
  //adding sepertor
  {
-  heading: "Admissions",
-  title: "**************************************************************************************************************************************************************************************************************************************************************************************************",
+  heading: "**************************************************************************************************************************************************************************************************************************************************************************************************",
+  title: "",
   data: [
     // {
     //   para: "",
@@ -370,8 +444,8 @@ const Admissions = [
 
 //adding archive so that users get the ideas that below things are outdated 
 {
-  heading: "",
-  title: "Archive : ",
+  heading: "Archive :",
+  title: "",
   data: [
     // {
     //   // para: "******************************",
@@ -380,8 +454,8 @@ const Admissions = [
   ],
 },
  {
-  heading: "Admissions",
-  title: "Miscellaneous ",
+  heading: "Miscellaneous",
+  title: "",
   data: [
    {
     para: "Change of  Branch for the session 2023-24",
@@ -396,8 +470,8 @@ const Admissions = [
   ],
  },
  {
-  heading: "Admissions",
-  title: "JoSAA/CSAB/DASA-2023 ",
+  heading: "JoSAA/CSAB/DASA-2023",
+  title: " ",
   notice:
    "Notice: There will be NO physical reporting for UG admission through JoSAA/CSAB/DASA-2023 on 15.08.2023 (Independence Day)",
   data: [
@@ -430,8 +504,8 @@ const Admissions = [
   ],
  },
  {
-  heading: "Admissions",
-  title: "CCMT Counselling 2023 ",
+  heading: "CCMT Counselling 2023",
+  title: " ",
   data: [
    {
     para: "CCMT 2023",

@@ -128,7 +128,8 @@ const Facultyprofile = ({ url }) => {
                 </div>
               )}
 
-              {data.publications.length > 0 && (
+              {data.publications && data.publications.pub_pdf && (
+
                 <div>
                   <a href="#pub_pdf">
                     <button className="cv-btn" color="primary" variant="contained">
@@ -206,7 +207,23 @@ const Facultyprofile = ({ url }) => {
               </div>
             )}
 
-
+            {data.publications && data.publications.pub_pdf && (
+              <div id="pub_pdf" className="cv">
+                <a href="#" className="close">
+                  <div className="popup">
+                    <div className="close">X</div>
+                    <div className="content">
+                      <iframe
+                        src={`${data.publications.pub_pdf.split("view")[0]}/preview?usp=drivesdk`}
+                        width="100%"
+                        height="100%"
+                        title="Publications"
+                      ></iframe>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            )}
 
 
             {/* Faculty Details */}
