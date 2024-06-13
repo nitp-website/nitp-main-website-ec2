@@ -76,7 +76,7 @@ const Academicspage = () => {
             )}
            {e.data.map((item, itemIndex) => (
   <div key={itemIndex}>
-    {item.para === "a. First Round:" || item.para === "b. Second Round:" || item.para === "Course: B.Tech / BArch / MTech / March / MURP / PhD" ? (
+    { item.para === "Course: B.Tech / BArch / MTech / March / MURP / PhD" ? (
       <h4 style={{ fontSize: '18px' }}>{item.para}</h4>
     ) : (
       <li>

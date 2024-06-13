@@ -117,8 +117,8 @@ const Facultyprofile = ({ url }) => {
                   </a>
                 </div>
               )}
-
-              {data.publications.pub_pdf && (
+//changes
+              {data.publications && data.publications.pub_pdf && (
                 <div>
                   <a href="#pub_pdf">
                     <button className="cv-btn" color="primary" variant="contained">
@@ -196,7 +196,7 @@ const Facultyprofile = ({ url }) => {
               </div>
             )}
 
-            {data.publications.pub_pdf && (
+            {data.publications && data.publications.pub_pdf && (
               <div id="pub_pdf" className="cv">
                 <a href="#" className="close">
                   <div className="popup">
