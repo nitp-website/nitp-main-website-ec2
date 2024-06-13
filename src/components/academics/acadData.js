@@ -331,14 +331,7 @@ const Admissions = [
     heading: "",
     title: "2. Admission Schedule:",
     data: [
-      {
-        para: "There will be two rounds of counselling as per schedule given Below:",
-        link: "",
-      },
-      {
-        para: "a. First Round:",
-        link: "",
-      },
+      
       {
         para: " Last date of registration: 25 June 2024",
         link: "",
@@ -355,26 +348,7 @@ const Admissions = [
         para: " Last date of confirmation for sending admission letter: 28 June 2024",
         link: "",
       },
-      {
-        para: "b. Second Round:",
-        link: "",
-      },
-      {
-        para: " Last date of registration: 25 July 2024",
-        link: "",
-      },
-      {
-        para: "Last date of Scrutiny of applications (select/Reject): 29 July 2024, 5 PM",
-        link: "",
-      },
-      {
-        para: " Missing documents to be uploaded: 30 July 2024, 5 PM",
-        link: "",
-      },
-      {
-        para: " Last date of confirmation for sending admission letter: 30 July 2024",
-        link: "",
-      },
+      
     ],
   },
   {
