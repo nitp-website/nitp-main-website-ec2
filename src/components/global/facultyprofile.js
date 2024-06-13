@@ -396,7 +396,10 @@ function formatConference(conference) {
     <div className="factable">
       {data.articles.map((article, index) => (
         <div key={index} className="article">
-          <p>{formatArticle(article)}</p>
+          <ul>
+            <li><p>{formatArticle(article)}</p></li>
+          </ul>
+          
         </div>
       ))}
     </div>
@@ -428,15 +431,18 @@ function formatConference(conference) {
   <div className="fac-card" data-aos="fade-up">
     <h3>Conferences</h3>
     <div className="factable">
-      <table>
-        <tbody>
-          {data.conferences.map((conference, index) => (
-            <tr key={index}>
-              <td>{formatConference(conference)}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      
+        {data.conferences.map((conference, index) => (
+        <div key={index} className="article">
+          <ul>
+            <li><p>{formatConference(conference)}</p></li>
+          </ul>
+          
+        </div>
+      ))}
+          
+        
+      
     </div>
   </div>
 )}
