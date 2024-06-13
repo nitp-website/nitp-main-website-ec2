@@ -29,9 +29,15 @@ const Facultyprofile = ({ url }) => {
     try {
       const res = await axios.get(url);
       const detail = res.data;
+      console.log("API Response:", detail);
+
+      const sortByYearDesc = (arr, key = "year") => {
+        return arr.sort((a, b) => new Date(b[key]) - new Date(a[key]));
+      };
+
       setData({
         profile: detail.profile || {},
-        publications: detail.publications ? detail.publications[0] : [],
+        publications: detail.publications ? JSON.parse(detail.publications[0].publications) : [],
         subjects: detail.subjects_teaching || [],
         memberships: detail.memberships || [],
         qualification: detail.education || [],
@@ -39,27 +45,31 @@ const Facultyprofile = ({ url }) => {
         currResponsibility: detail.curr_admin_responsibility || [],
         pastResponsibility: detail.past_admin_responsibility || [],
         patents: detail.publications && detail.publications[0]?.publications 
-          ? JSON.parse(detail.publications[0].publications).filter(x => x.type === "patent") 
+          ? sortByYearDesc(JSON.parse(detail.publications[0].publications).filter(x => x.type === "patent")) 
           : [],
         books: detail.publications && detail.publications[0]?.publications 
-          ? JSON.parse(detail.publications[0].publications).filter(x => x.type === "book") 
+          ? sortByYearDesc(JSON.parse(detail.publications[0].publications).filter(x => x.type === "book")) 
           : [],
-        journals: detail.journals || [],
+        journals: detail.journals ? sortByYearDesc(detail.journals) : [],
         conferences: detail.publications && detail.publications[0]?.publications 
-          ? JSON.parse(detail.publications[0].publications).filter(x => x.type === "conference") 
+          ? sortByYearDesc(JSON.parse(detail.publications[0].publications).filter(x => x.type === "conference")) 
           : [],
         articles: detail.publications && detail.publications[0]?.publications 
-          ? JSON.parse(detail.publications[0].publications).filter(x => x.type === "article") 
+          ? sortByYearDesc(JSON.parse(detail.publications[0].publications).filter(x => x.type === "article")) 
           : [],
-        projects: detail.project || [],
+        projects: detail.project ? sortByYearDesc(detail.project, "start") : [],
         services: detail.professional_service || [],
         workExperience: detail.work_experience || [],
-        phdCandidates: detail.phd_candidates || []
+        phdCandidates: detail.phd_candidates ? sortByYearDesc(detail.phd_candidates, "completion_year") : []
       });
     } catch (e) {
       console.log(e);
     }
   }, [url]);
+  const extractPublications = (publications, type) => {
+    if (!publications || publications.length === 0) return [];
+    return publications.filter(pub => pub.type === type);
+  };
 
   useEffect(() => {
     fetchData();
@@ -102,7 +112,7 @@ const Facultyprofile = ({ url }) => {
                   alt="Faculty"
                 />
               </div>
-              <a href={`mailto:${data.profile.email}`} target="blank" rel="noopener noreferrer">
+              <a href={`mailto:${data.profile.email}`} target="_blank" rel="noopener noreferrer">
                 <img src={mail} className="img-fluid facmail" alt="Email" />
               </a>
               <h2>{data.profile.name}</h2>
@@ -117,8 +127,9 @@ const Facultyprofile = ({ url }) => {
                   </a>
                 </div>
               )}
-//changes
+
               {data.publications && data.publications.pub_pdf && (
+
                 <div>
                   <a href="#pub_pdf">
                     <button className="cv-btn" color="primary" variant="contained">
@@ -214,84 +225,301 @@ const Facultyprofile = ({ url }) => {
               </div>
             )}
 
+
             {/* Faculty Details */}
             <div className="faculty-details-row">
               <h1>Profile</h1>
               <div className="fac-card" data-aos="fade-up">
-                <h3>
-                  {data.profile.department === "Officers"
-                    ? "Responsibilities:-"
-                    : "Research Interest:-"}
-                </h3>
+                <h3>Research Interests</h3>
                 <p>{data.profile.research_interest}</p>
-                <div style={{ display: "flex" }} className="row">
+              </div>
+
+              <div className="fac-card" data-aos="fade-up">
+                <h3>Contact Information</h3>
+                <div className="row">
                   <div className="col-6">
-                    <h3>Email:-</h3>
-                    <p>{data.profile.email}</p>
+                    <p><strong>Email:</strong> {data.profile.email}</p>
                   </div>
                   <div className="col-6">
-                    <h3>Phone:-</h3>
-                    <p>{data.profile.ext_no}</p>
+                    <p><strong>Phone:</strong> {data.profile.ext_no}</p>
                   </div>
                 </div>
               </div>
 
-              {/* Subjects */}
               {data.subjects.length > 0 && (
                 <div className="fac-card" data-aos="fade-up">
-                  <h3>Subjects</h3>
+                  <h3>Subjects Taught</h3>
                   <div className="factable">
                     <table>
-                      {data.subjects.map((item, index) => (
-                        <p key={index}>
-                          {item.code} {item.name} {item.start || ""} {item.end || ""}
-                        </p>
+                      {data.subjects.map((subject, index) => (
+                        <tr key={index}>
+                          <td>{subject.code}</td>
+                          <td>{subject.name}</td>
+                          <td>{subject.start} - {subject.end}</td>
+                        </tr>
                       ))}
                     </table>
                   </div>
                 </div>
               )}
 
-              {/* Memberships */}
               {data.memberships.length > 0 && (
                 <div className="fac-card" data-aos="fade-up">
-                  <h3>Memberships & Society</h3>
+                  <h3>Memberships</h3>
                   <div className="factable">
-                    <table>
-                      {data.memberships.map((item, index) => (
-                        <p key={index}>
-                          {item.membership_name} {item.type} {item.date || ""}
-                        </p>
+                    <ul>
+                      {data.memberships.map((membership, index) => (
+                        <li key={index}>{membership}</li>
                       ))}
-                    </table>
+                    </ul>
                   </div>
                 </div>
               )}
 
-              {/* Qualifications */}
               {data.qualification.length > 0 && (
-                <div className="fac-card" data-aos="fade-up">
-                  <h3>Qualification</h3>
-                  <div className="factable">
-                    <table>
-                      {data.qualification.map((item, index) => (
-                        <p key={index}>
-                          {item.degree} {item.department} {item.college}{" "}
-                          {item.passing_year}
-                        </p>
-                      ))}
-                    </table>
-                  </div>
+                <div className="fac-card" data-aos
+                ="fade-up">
+                <h3>Education</h3>
+                <div className="factable">
+                  <table>
+                    {data.qualification.map((edu, index) => (
+                      <tr key={index}>
+                        <td>{edu.certification}</td>
+                        <td>{edu.institution}</td>
+                        <td>{edu.passing_year}</td>
+                      </tr>
+                    ))}
+                  </table>
                 </div>
-              )}
+              </div>
+            )}
 
-              {/* Other sections (Work Experience, Research Projects, etc.) can be added similarly */}
-            </div>
-          </FacultyProfile>
-        </Layout>
-      )}
-    </>
-  );
+            {data.pg_ug.length > 0 && (
+              <div className="fac-card" data-aos="fade-up">
+                <h3>PG/UG Projects Supervised</h3>
+                <div className="factable">
+                  <table>
+                    {data.pg_ug.map((project, index) => (
+                      <tr key={index}>
+                        <td>{project.student_name}</td>
+                        <td>{project.student_program}</td>
+                        <td>{project.project_topic}</td>
+                        <td>{project.start_year} - {project.completion_year}</td>
+                      </tr>
+                    ))}
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {data.currResponsibility.length > 0 && (
+              <div className="fac-card" data-aos="fade-up">
+                <h3>Current Administrative Responsibilities</h3>
+                <ul>
+                  {data.currResponsibility.map((responsibility, index) => (
+                    <li key={index}>{responsibility.curr_responsibility}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {data.pastResponsibility.length > 0 && (
+              <div className="fac-card" data-aos="fade-up">
+                <h3>Past Administrative Responsibilities</h3>
+                <ul>
+                  {data.pastResponsibility.map((responsibility, index) => (
+                    <li key={index}>{responsibility.past_responsibility}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {data.patents.length > 0 && (
+              <div className="fac-card" data-aos="fade-up">
+                <h3>Patents</h3>
+                <div className="factable">
+                  <table>
+                    {data.patents.map((patent, index) => (
+                      <tr key={index}>
+                        <td>{patent.title}</td>
+                        <td>{patent.year}</td>
+                        <td>{patent.authors}</td>
+                      </tr>
+                    ))}
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {data.books.length > 0 && (
+              <div className="fac-card" data-aos="fade-up">
+                <h3>Books</h3>
+                <div className="factable">
+                  <table>
+                    {data.books.map((book, index) => (
+                      <tr key={index}>
+                        <td>{book.title}</td>
+                        <td>{book.year}</td>
+                        <td>{book.authors}</td>
+                      </tr>
+                    ))}
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {data.journals.length > 0 && (
+              <div className="fac-card" data-aos="fade-up">
+                <h3>Journal Publications</h3>
+                <div className="factable">
+                  <table>
+                    {data.journals.map((journal, index) => (
+                      <tr key={index}>
+                        <td>{journal.title}</td>
+                        <td>{journal.year}</td>
+                        <td>{journal.authors}</td>
+                      </tr>
+                    ))}
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {data.conferences.length > 0 && (
+              <div className="fac-card" data-aos="fade-up">
+                <h3>Conference Publications</h3>
+                <div className="factable">
+                  <table>
+                    {data.conferences.map((conference, index) => (
+                      <tr key={index}>
+                        <td>{conference.title}</td>
+                        <td>{conference.year}</td>
+                        <td>{conference.authors}</td>
+                      </tr>
+                    ))}
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {data.articles.length > 0 && (
+              <div className="fac-card" data-aos="fade-up">
+                <h3>Articles</h3>
+                <div className="factable">
+                  <table>
+                    {data.articles.map((article, index) => (
+                      <tr key={index}>
+                        <td>{article.title}</td>
+                        <td>{article.year}</td>
+                        <td>{article.authors}</td>
+                      </tr>
+                    ))}
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {data.projects.length > 0 && (
+              <div className="fac-card" data-aos="fade-up">
+                <h3>Projects</h3>
+                <div className="factable">
+                  <table>
+                    {data.projects.map((project, index) => (
+                      <tr key={index}>
+                        <td>{project.project}</td>
+                        <td>{project.sponsor}</td>
+                        <td>{project.amount}</td>
+                        <td>{project.start} - {project.end}</td>
+                      </tr>
+                    ))}
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {data.services.length > 0 && (
+              <div className="fac-card" data-aos="fade-up">
+                <h3>Professional Services</h3>
+                <ul>
+                  {data.services.map((service, index) => (
+                    <li key={index}>{service}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {data.workExperience.length > 0 && (
+              <div className="fac-card" data-aos="fade-up">
+                <h3>Work Experience</h3>
+                <div className="factable">
+                  <table>
+                    {data.workExperience.map((exp, index) => (
+                      <tr key={index}>
+                        <td>{exp.work_experiences}</td>
+                        <td>{exp.institute}</td>
+                        <td>{exp.start} - {exp.end}</td>
+                      </tr>
+                    ))}
+                  </table>
+                </div>
+              </div>
+            )}
+
+            {data.phdCandidates.length > 0 && (
+              <div className="fac-card" data-aos="fade-up">
+                <h3>Ph.D. Candidates</h3>
+                <div className="factable">
+                  <table>
+                    {data.phdCandidates.map((candidate, index) => (
+                      <tr key={index}>
+                        <td>{candidate.phd_student_name}</td>
+                        <td>{candidate.thesis_topic}</td>
+                        <td>{candidate.start_year} - {candidate.completion_year}</td>
+                      </tr>
+                    ))}
+                  </table>
+                </div>
+              </div>
+            )}
+            
+{data.publications.length > 0 && (
+  <div className="fac-card" data-aos="fade-up">
+    <h3>Publications</h3>
+    <div className="factable">
+      <table>
+        {data.publications.map((publication, index) => (
+          <tr key={index}>
+            <td>{publication.title}</td>
+            <td>{publication.year}</td>
+            <td>{publication.authors}</td>
+          </tr>
+        ))}
+      </table>
+    </div>
+  </div>
+)}
+
+{/* Render PDF Preview if available */}
+{data.publications.length > 0 && data.publications[0].pub_pdf && (
+  <div className="fac-card" data-aos="fade-up">
+    <h3>Publications PDF Preview</h3>
+    <div className="factable">
+      <iframe
+        src={`${data.publications[0].pub_pdf.split("view")[0]}/preview?usp=drivesdk`}
+        width="100%"
+        height="600px"
+        title="Publications Preview"
+      />
+    </div>
+  </div>
+)}
+
+          </div>
+        </FacultyProfile>
+      </Layout>
+    )}
+  </>
+);
 };
 
 export default Facultyprofile;
