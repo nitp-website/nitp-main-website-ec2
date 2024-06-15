@@ -35,106 +35,32 @@ const Facultypage = ({ title, url, dept }) => {
 
   const FacultyStyle = PageLayout;
 
-  const renderFacultiesByDesignation = (designations, title) => {
-    const filteredFaculties = data.filter(faculty =>
-      designations.includes(faculty.designation)
-    );
-
-    if (filteredFaculties.length === 0) return null;
-
-    return (
-      <div key={title}>
-        <h2>{title}</h2>
-        <div className="row facultyrow">
-          {filteredFaculties.map(faculty => (
-            <Facultycard
-              key={faculty.id}
-              name={faculty.name}
-              subtitle={department ? faculty.department : null}
-              email={faculty.email}
-              extn={faculty.ext_no}
-              id={faculty.email}
-              research={faculty.research_interest}
-              image={faculty.image}
-              desg={faculty.designation}
-              dept={faculty.department}
-            />
-          ))}
-        </div>
-      </div>
-    );
-  };
-
-  const renderRegistrar = () => {
-    const registrars = data.filter(faculty => faculty.designation === "Registrar");
-
-    if (registrars.length === 0) return null;
-
-    return (
-      <div key="Registrar">
-        <h2>Registrar</h2>
-        <div className="row facultyrow">
-          {registrars.map(faculty => (
-            <Facultycard
-              key={faculty.id}
-              name="Dr. Asit Narayan"
-              subtitle={null}
-              email="asit.narayan@nitp.ac.in"
-              extn="0"
-              id="asit.narayan@nitp.ac.in"
-              research=""
-              image={null}
-              desg="Registrar"
-              dept="Officers"
-            />
-          ))}
-        </div>
-      </div>
-    );
-  };
-
-  const renderRemainingFaculties = () => {
-    const classifiedDesignations = [
-      "Professor & HOD",
-      "Associate Professor & HOD",
-      "Professor & HoD",
-      "Associate Professor & HoD",
-      "HoD & Professor",
-      "HoD & Associate Professor",
+  const reorderFaculties = () => {
+    const priorityOrder = [
+      "Professor & HOD", 
+      "Associate Professor & HOD", 
+      "Professor & HoD", 
+      "Associate Professor & HoD", 
+      "HoD & Professor", 
+      "HoD & Associate Professor", 
       "HoD and Professor",
       "Professor",
       "Associate Professor",
-      "Assistant Professor",
-      "Registrar"
+      "Assistant Professor"
     ];
 
-    const remainingFaculties = data.filter(
-      faculty => !classifiedDesignations.includes(faculty.designation)
-    );
+    return data.sort((a, b) => {
+      const aPriority = priorityOrder.indexOf(a.designation);
+      const bPriority = priorityOrder.indexOf(b.designation);
 
-    if (remainingFaculties.length === 0) return null;
+      if (aPriority === -1) return 1; // a is not in priority list
+      if (bPriority === -1) return -1; // b is not in priority list
 
-    return (
-      <div key="Others">
-        <div className="row facultyrow">
-          {remainingFaculties.map(faculty => (
-            <Facultycard
-              key={faculty.id}
-              name={faculty.name}
-              subtitle={department ? faculty.department : null}
-              email={faculty.email}
-              extn={faculty.ext_no}
-              id={faculty.email}
-              research={faculty.research_interest}
-              image={faculty.image}
-              desg={faculty.designation}
-              dept={faculty.department}
-            />
-          ))}
-        </div>
-      </div>
-    );
+      return aPriority - bPriority;
+    });
   };
+
+  const sortedFaculties = reorderFaculties();
 
   return (
     <>
@@ -167,12 +93,22 @@ const Facultypage = ({ title, url, dept }) => {
               </div>
             </div>
           </div>
-          {renderFacultiesByDesignation(["Professor & HOD", "Associate Professor & HOD", "Professor & HoD", "Associate Professor & HoD", "HoD & Professor", "HoD & Associate Professor", "HoD and Professor"], "Head of Department")}
-          {renderFacultiesByDesignation(["Professor"], "Professor")}
-          {renderFacultiesByDesignation(["Associate Professor"], "Associate Professor")}
-          {renderFacultiesByDesignation(["Assistant Professor"], "Assistant Professor")}
-          {renderRegistrar()}
-          {renderRemainingFaculties()}
+          <div className="row facultyrow">
+            {sortedFaculties.map(faculty => (
+              <Facultycard
+                key={faculty.id}
+                name={faculty.name}
+                subtitle={department ? faculty.department : null}
+                email={faculty.email}
+                extn={faculty.ext_no}
+                id={faculty.email}
+                research={faculty.research_interest}
+                image={faculty.image}
+                desg={faculty.designation}
+                dept={faculty.department}
+              />
+            ))}
+          </div>
         </div>
       </FacultyStyle>
     </>
