@@ -333,6 +333,11 @@ const Academics = [
     title: "Patents",
     data: "patents",
    },
+   {
+    url: "/bis",
+    title: "BIS Dashboard",
+    data: "",
+   },
    // {
    //   url: "/academics",
    //   title: "Centre of Excellence",

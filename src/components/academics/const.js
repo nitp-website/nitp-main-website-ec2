@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const AcademicsList = [
  {
   title: "Admissions",
@@ -59,6 +61,13 @@ const AcademicsList = [
   data: "patents",
   // img: "/test.svg",
  },
+ {
+    title: "BIS Dashboard",
+    data: "",
+    Link:"/bis",
+    // img: "/test.svg",
+   },
+
 ]
 
 export default AcademicsList

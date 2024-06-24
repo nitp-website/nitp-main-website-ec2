@@ -25,6 +25,12 @@ const Floatmenu = () => (
       <h3>Notice</h3>
      </a>
     </div>
+    <div className="float-card">
+     <a href="/bis">
+      <h3>BIS Dashboard</h3>
+     </a>
+    </div>
+    
    </div>
    <img
     src={float}

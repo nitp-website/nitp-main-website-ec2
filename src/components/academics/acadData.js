@@ -1460,7 +1460,11 @@ const Patents = [
    },
   ],
  },
+ 
 ]
+const BISDashboard={
+  Link:"/bis",
+}
 
 const acadData = {
  datad: Datad,
@@ -1487,5 +1491,6 @@ const acadData = {
  magazine: Magazine,
  annualreports: AnnualReports,
  patents: Patents,
+ bis:BISDashboard,
 }
 export default acadData
