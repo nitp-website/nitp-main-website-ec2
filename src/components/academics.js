@@ -131,6 +131,7 @@ const Academicspage = () => {
           >
            PG (M.tech/MURP) Courses
           </button>
+
           <button
            onClick={() => {
             setView("programmesdd")
@@ -146,6 +147,14 @@ const Academicspage = () => {
            className={view == "programmesimsc" ? "btnactive" : ""}
           >
            Integrated Courses
+          </button>
+          <button
+           onClick={() => {
+            setView("programmesmca")
+           }}
+           className={view == "programmesmca" ? "btnactive" : ""}
+          >
+          MCA Programs
           </button>
          </div>
          {view == "programmes" && (
@@ -485,6 +494,36 @@ const Academicspage = () => {
                   {e.para}
                  </p>
                 </a>
+               </>
+              ))}
+             </div>
+            ))
+          : ""}
+          {view == "programmesmca"
+          ? acadData.courseMCA.map(item => (
+             <div className="digital">
+              <h3
+               style={{
+                fontFamily: `Source Sans Pro`,
+               }}
+              >
+               {item.title}
+              </h3>
+              <br />
+              {item.data.map(e => (
+               <>
+                
+                 <p
+                  style={{
+                   fontWeight: `bold`,
+                   borderBottom: `1px dotted black`,
+                   paddingBottom: `0.5rem`,
+                   margin: `0 1rem`,
+                  }}
+                 >
+                  {e.para}
+                 </p>
+                
                </>
               ))}
              </div>
