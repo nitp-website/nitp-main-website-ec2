@@ -965,6 +965,24 @@ const CourseMsc = [
   ],
  },
 ]
+const CourseMCA = [
+  {
+   title: "MCA program",
+   data: [
+    {
+     para: "MCA with specialization in Data Science & Informatics, Duration :3 Years",
+     link:
+      "",
+    },
+    {
+     para: "MCA with specialization in AI & IoT, Duration: 3 Years ",
+     link:
+      "",
+    },
+   
+   ],
+  },
+ ]
 
 const NIRF = [
  {
