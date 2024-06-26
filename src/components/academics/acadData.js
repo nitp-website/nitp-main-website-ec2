@@ -622,17 +622,17 @@ const Fee = [
  },
  {
   heading: "Fee Structures",
-  title: `Fee structure for MCA programme`,
+  title: `Fee structure for MCA programme (3 years) `,
   data: [
    {
     para: "Regular.",
     link:
-     "http://web.nitp.ac.in/uploads20/MCA%20Fee%20Structure%20%2021-22%20Regular.pdf",
+     "https://drive.google.com/file/d/1lqdJOpCSKd3qby9H91XhE8vefpIr4hBs/view?usp=drivesdk",
    },
    {
     para: "Self-financed.",
     link:
-     "http://web.nitp.ac.in/uploads20/MCA%20Fee%20Structure%20%2021-22%20SelfFinanced.pdf",
+     "https://drive.google.com/file/d/1lqWSLl3w1NNDKf9TtrIA5MZH4OohReY-/view?usp=drivesdk",
    },
   ],
  },
