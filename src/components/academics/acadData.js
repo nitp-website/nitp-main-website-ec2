@@ -100,6 +100,8 @@ const DataPHD = [
  },
 ]
 
+ 
+
 const DataNotice = [
  {
   heading: "Regulation & Curricula",
@@ -963,6 +965,25 @@ const CourseMsc = [
   ],
  },
 ]
+const CourseMCA = [
+  {
+   title: "MCA program",
+   data: [
+    {
+     para: "MCA with specialization in Data Science & Informatics, Duration :3 Years",
+     link:
+      "",
+    },
+    {
+     para: "MCA with specialization in AI & IoT, Duration: 3 Years ",
+     link:
+      "",
+    },
+   
+   ],
+  },
+ ]
+
 const NIRF = [
  {
   title: "NIRF",
@@ -1099,7 +1120,7 @@ const Privacy = [
      "Information that is not personal in nature, i.e., IP addresses, web browser and operating system details, browsing habits, demographical and geographic data and other similar information may be logged and used to analyze and extrapolate information about general user behavior within the NITP website. Such extrapolations and statistics may be made public; however, they cannot be tracked to individual users. IP addresses are not linked to anything that can help identify the user. Neither are IP addresses, except in rare occasions, handed out to third parties.",
    },
    {
-    title: "Cookies",
+    title: "Cookies.",
     para:
      "This website uses “cookies” to track usage and manage services on the website. Cookies are small bits of data that may be transferred to the user’s hard drive when he logs in or accesses a particular part of the website. These are used for a variety of purposes including authentication and can be blocked by reconfiguring the appropriate settings in your web browser. Doing so may, however, restrict access to certain parts of the website. Cookies can also be removed from the user’s hard drive whenever he wishes through his browser options. Information collected through cookies cannot be traced back to the user as it contains no personally identifiable data like name, address or phone number.",
    },
@@ -1482,6 +1503,7 @@ const acadData = {
  coursePG: CoursePG,
  courseUG: CourseUG,
  coursePHD: CoursePHD,
+ courseMCA:CourseMCA,
  nirf: NIRF,
  statutes: Statutes,
  privacy: Privacy,
