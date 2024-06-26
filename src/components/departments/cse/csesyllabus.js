@@ -6,9 +6,13 @@ import Courseug_nep21 from "./cse Btech NEP21";
 import Course_CSEBtech22_onwards from "./cse Btech 2022 Onwards";
 import Course_DD_CyberSecurity from "./cse Dual Degree CyberSecurity";
 import Course_DD_DataScience from "./cse Dual Degree DataScience";
+import Course_MCA_DataScience from "./cse MCA DS & I";
+import Course_MCA_ArtificialIntelligence from "./cse MCA AI & IOT"
 import { PageLayout } from "../../styles/pagelayout";
 import { TabPage } from "../../styles/tabpage";
 import Table from "../../table";
+import filelink from "./FilePath.json"; 
+
 
 const Csesyllabus = () => {
   const [course, setCourse] = useState("programmesug");
@@ -20,6 +24,42 @@ const Csesyllabus = () => {
       url: `https://web.nitp.ac.in/dept/cse/syllabus/${folderName}/${item.coursecode}_${item.coursetitle}.docx`,
     }));
   };
+  const addurlMcads = (syllabusData) => {
+    return syllabusData.map((item) => {
+      const fileName = `${item.coursecode}_${item.coursetitle}.docx`;
+      const mcaData = filelink.MCA_DS_I.find((mcaItem) => mcaItem.Name === fileName);
+
+      if (mcaData) {
+        return {
+          ...item,
+          url: mcaData.URL,
+        };
+      } else {
+        return {
+          ...item,
+        };
+      }
+    });
+  };
+  const addurlMcaAI = (syllabusData) => {
+    return syllabusData.map((item) => {
+      const fileName = `${item.coursecode}_${item.coursetitle}.docx`;
+      const mcaData = filelink.MCA_AI_IOT.find((mcaItem) => mcaItem.Name === fileName);
+
+      if (mcaData) {
+        return {
+          ...item,
+          url: mcaData.URL,
+        };
+      } else {
+        return {
+          ...item,
+        };
+      }
+    });
+  };
+
+
 
   useEffect(() => {}, [course]);
 
@@ -96,6 +136,24 @@ const Csesyllabus = () => {
                 >
                   Dual Degree (Data Science and Engineering)
                 </button>
+                <button
+                  onClick={() => {
+                    setCourse("MCA program DS");
+                    setSyllabus(addurlMcads(Course_MCA_DataScience, "syllabus_of_MCA_Program_DS"));
+                  }}
+                  className={course === "programmes_MCA_DS" ? "btnactive" : ""}
+                >
+                  MCA (DS & I)
+                </button>
+                <button
+                  onClick={() => {
+                    setCourse("MCA program AI");
+                    setSyllabus(addurlMcaAI(Course_MCA_ArtificialIntelligence, "syllabus_of_MCA_Program_AI"));
+                  }}
+                  className={course === "programmes_MCA_AI" ? "btnactive" : ""}
+                >
+                  MCA (AI & IOT)
+                </button>
               </div>
             </div>
           </div>
@@ -112,6 +170,7 @@ const Csesyllabus = () => {
               </li>
             </ul>
           )}
+          
           {Array.isArray(syllabus) && syllabus.length > 0 && (
             <Table style={{ width: "100%", marginTop: "20px" }}>
               <thead>
