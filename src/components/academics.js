@@ -25,7 +25,10 @@ const Academicspage = () => {
   }
 
   useEffect(() => {
-    setTab(queryParams.get("tab")|| "admissions");
+    // Update tab based on URL parameter
+    const tabFromUrl = queryParams.get("tab") || "admissions";
+    setTab(tabFromUrl);
+    setView(tabFromUrl);
   }, [location.search]);
   
   useEffect(() => {

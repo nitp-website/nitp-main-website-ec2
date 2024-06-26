@@ -30,7 +30,7 @@ const Admin = [
   data: "",
   sub: [
    {
-    url: "/administration/?tab=director",
+    url: "/director",
     title: "Director",
     
    },
@@ -40,13 +40,16 @@ const Admin = [
    //   data: "deputydirector",
    // },
    {
-    url: "/administration/?tab=deans",
+    url: "/administration",
     title: "Deans",
+    data: "deans",
     
    },
    {
-    url: "/administration/?tab=registrar",
+    url: "/administration",
     title: "Registrar",
+    data:"registrar",
+   
     
    },
    {
