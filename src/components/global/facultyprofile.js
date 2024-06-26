@@ -458,6 +458,7 @@ function formatConference(conference) {
                       <tr key={index}>
                         <td>{membership.membership_society}</td>
                         <td>{membership.start} - {membership.end}</td>
+                        <td>{membership.membership_id}</td>
                       </tr>
                     ))}
                   </tbody>
