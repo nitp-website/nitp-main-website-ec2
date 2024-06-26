@@ -46,7 +46,9 @@ const Facultypage = ({ title, url, dept }) => {
       "HoD and Professor",
       "Professor",
       "Associate Professor",
-      "Assistant Professor"
+      "Assistant Professor",
+      "Temporary Faculty"
+
     ];
 
     return data.sort((a, b) => {
