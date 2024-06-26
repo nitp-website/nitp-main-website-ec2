@@ -203,18 +203,23 @@ const tequipData = (
   </div>
  </>
 )
-
+import { useLocation } from "react-router-dom";
 const Facilitiespage = () => {
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
   const { tab } = useParams();
-  const [view, setView] = useState("cc");
+  const initialTab = queryParams.get("tab") || "cc";
+  const [view, setView] = useState(initialTab );
+
   function getView(callback) {
     setView(callback);
   }
   useEffect(() => {
-    if (tab) {
-      setView(tab);
-    }
-  }, [tab]);
+    // Update tab based on URL parameter
+    const tabFromUrl = queryParams.get("tab") || "cc";
+   
+    setView(tabFromUrl);
+  }, [location.search]);
 
   const arrdata = [];
   Navlist.facilities.map((x) => arrdata.push(...x.sub));
