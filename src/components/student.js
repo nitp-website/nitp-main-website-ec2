@@ -99,10 +99,14 @@ const firstYear = [
   ],
  },
 ]
-
+import { useLocation } from "react-router-dom";
 const Studentpage = () => {
-  const { tab } = useParams(); // Use useParams to get the tab parameter from URL
-  const [view, setView] = useState("clubs");
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const { tab } = useParams();
+  const initialTab = queryParams.get("tab") || "clubs";
+  const [view, setView] = useState(initialTab );
+  
   const [notices, setNotices] = useState();
 
  function getView(callback) {
@@ -124,6 +128,12 @@ const Studentpage = () => {
    })
   })
  }, [tab])
+ useEffect(() => {
+  // Update tab based on URL parameter
+  const tabFromUrl = queryParams.get("tab") || "clubs";
+ 
+  setView(tabFromUrl);
+}, [location.search]);
  const arrdata = []
  Navlist.students.map(x => arrdata.push(...x.sub))
  return (
