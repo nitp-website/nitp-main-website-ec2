@@ -225,6 +225,11 @@ const Academics = [
     title: "Integrated M.sc",
     data: "programmesimsc",
    },
+   {
+    url: "/academics",
+    title: "MCA program",
+    data: "programmesmca",
+   },
   ],
  },
  {
@@ -316,11 +321,11 @@ const Academics = [
     title: "Format of Official Documents",
     data: "format",
    },
-   {
-    url: "http://nitp.ac.in/ict/index.php",
-    title: "ICT Academy",
-    data: "",
-   },
+  //  {
+  //   url: "http://nitp.ac.in/ict/index.php",
+  //   title: "ICT Academy",
+  //   data: "",
+  //  },
    {
     url: "/academics",
     title: "Digital Initiatives",

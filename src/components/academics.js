@@ -345,6 +345,28 @@ const Academicspage = () => {
                </td>
                <td>Integrated M. Sc. in Physics</td>
               </tr>
+              <tr>
+               <td colspan="4" align="center">
+                <b>MCA program</b>
+               </td>
+              </tr>
+              <tr>
+               <td>1</td>
+               <td>
+               Master of Computer Applications
+               </td>
+               <td>specialization in AI & IoT</td>
+               <td rowspan="3">3 Years</td>
+              </tr>
+              <tr>
+               <td>2</td>
+               <td>
+               Master of Computer Applications
+               </td>
+               <td>specialization in Data Science & Informatics</td>
+               
+              </tr>
+              
              </tbody>
             </table>
            </div>
