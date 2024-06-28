@@ -1,16 +1,16 @@
 const Datad = [
  {
   heading: "Digital Initiatives of NIT Patna",
-  title: "GIAN Course PFB the links",
+  title: "Will be soon available !!!",//GIAN Course PFB the links
   links: [
-   "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=8481eb96-881a-4a04-ba70-b30449feeea4",
-   "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=449b9433-c336-4eec-8430-aa164ee27770",
-   "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=ea39bab1-3a53-4977-bd25-5bc1e007d502",
-   "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=5559e621-ad4c-4f15-951c-c6618cc8b90b",
-   "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=08d6a31c-c935-4f0d-a53a-689bcccdb14e",
-   "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=91529777-74db-4f1b-820c-7504a5c904c0",
-   "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=3859882e-ae4e-482b-92c1-768cf2211735",
-   "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=3848b244-8218-47a0-a914-8b9d3ee219ec",
+  //  "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=8481eb96-881a-4a04-ba70-b30449feeea4",
+  //  "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=449b9433-c336-4eec-8430-aa164ee27770",
+  //  "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=ea39bab1-3a53-4977-bd25-5bc1e007d502",
+  //  "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=5559e621-ad4c-4f15-951c-c6618cc8b90b",
+  //  "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=08d6a31c-c935-4f0d-a53a-689bcccdb14e",
+  //  "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=91529777-74db-4f1b-820c-7504a5c904c0",
+  //  "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=3859882e-ae4e-482b-92c1-768cf2211735",
+  //  "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=3848b244-8218-47a0-a914-8b9d3ee219ec",
   ],
  },
 ]
