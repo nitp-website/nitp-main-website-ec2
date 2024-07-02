@@ -58,13 +58,13 @@ const AcademicsList = [
  },
  {
   title: "Patents",
-  data: "patents",
+  relPath: "/patents",
   // img: "/test.svg",
  },
  {
     title: "BIS Dashboard",
-    data: "",
-    Link:"/bis",
+    
+    relPath:"/bis",
     // img: "/test.svg",
    },
 
