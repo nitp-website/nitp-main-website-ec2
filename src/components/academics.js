@@ -49,8 +49,9 @@ const Academicspage = () => {
         <Navigate
           data={AcademicsList}
           callback={getView}
-          tab={tab.slice(0, 10) === "programmes" ? tab : "admissions"}
+          tab={tab.slice(0, 13) === "programmes" ? tab : "admissions"}
         />
+        
         <div className="mainDiv">
         {view === "admissions" && (
   <div className="layoutrow layoutrow1 rowmarl3" id="admission">

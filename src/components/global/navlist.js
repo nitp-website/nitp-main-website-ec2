@@ -337,9 +337,9 @@ const Academics = [
     data: "curricula",
    },
    {
-    url: "/academics",
+    url: "/patents",
     title: "Patents",
-    data: "patents",
+    data: "",
    },
    {
     url: "/bis",
