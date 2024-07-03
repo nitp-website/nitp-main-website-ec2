@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    text-align: center;
+    background-color: #f0f0f0; /* Light gray background */
+  }
+  
+  .title {
+    color: #c62828; /* Darker red color */
+    font-weight: bold;
+    font-size: 3rem; /* Larger font size */
+    margin-bottom: 20px; /* Space between title and content */
+  }
+  
+  .center-screen {
+    font-size: 1.5rem; /* Medium font size */
+    background-color: #ffffff; /* White background */
+    padding: 20px; /* Padding for spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px; /* Rounded corners for smooth look */
+  }
+  
