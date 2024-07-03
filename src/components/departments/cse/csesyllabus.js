@@ -192,6 +192,11 @@ const Csesyllabus = () => {
                 >
                   PhD Courses
                 </button>
+                
+              </div>
+              <div style={{ height: "5px" }}></div>
+              <div className="probutton">
+                
                 <button
                   onClick={() => {
                     setCourse("programmes_dd_cyber_security");
