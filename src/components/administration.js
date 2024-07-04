@@ -6,24 +6,26 @@ import { AdminStyle } from "./styles/AdminStyle";
 import Navigate from "./global/Navigate";
 import Admin from "./administration/const";
 import { useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Administrationpage = () => {
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
   const { tab } = useParams();
-  const [view, setView] = useState("director");
+  const initialTab = queryParams.get("tab") || "director";
+  const [view, setView] = useState(initialTab );
   const [content, setContent] = useState([]);
   const CardData = ["deans", "bog", "bwc", "idc", "fc", "senate", "suh"];
 
   function getView(callback) {
     setView(callback);
   }
-
   useEffect(() => {
-    if (tab) {
-      setView(tab);
-    } else {
-      setView("director");
-    }
-  }, [tab]);
+    // Update tab based on URL parameter
+    const tabFromUrl = queryParams.get("tab") || "director";
+   
+    setView(tabFromUrl);
+  }, [location.search]);
 
   useEffect(() => {
     let temp;

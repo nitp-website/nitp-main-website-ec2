@@ -25,7 +25,10 @@ const Academicspage = () => {
   }
 
   useEffect(() => {
-    setTab(queryParams.get("tab")|| "admissions");
+    // Update tab based on URL parameter
+    const tabFromUrl = queryParams.get("tab") || "admissions";
+    setTab(tabFromUrl);
+    setView(tabFromUrl);
   }, [location.search]);
   
   useEffect(() => {
@@ -46,8 +49,9 @@ const Academicspage = () => {
         <Navigate
           data={AcademicsList}
           callback={getView}
-          tab={tab.slice(0, 10) === "programmes" ? tab : "admissions"}
+          tab={tab.slice(0, 13) === "programmes" ? tab : "admissions"}
         />
+        
         <div className="mainDiv">
         {view === "admissions" && (
   <div className="layoutrow layoutrow1 rowmarl3" id="admission">
@@ -342,6 +346,28 @@ const Academicspage = () => {
                </td>
                <td>Integrated M. Sc. in Physics</td>
               </tr>
+              <tr>
+               <td colspan="4" align="center">
+                <b>MCA program</b>
+               </td>
+              </tr>
+              <tr>
+               <td>1</td>
+               <td>
+               Master of Computer Applications
+               </td>
+               <td>specialization in AI & IoT</td>
+               <td rowspan="3">3 Years</td>
+              </tr>
+              <tr>
+               <td>2</td>
+               <td>
+               Master of Computer Applications
+               </td>
+               <td>specialization in Data Science & Informatics</td>
+               
+              </tr>
+              
              </tbody>
             </table>
            </div>

@@ -6,9 +6,15 @@ import Courseug_nep21 from "./cse Btech NEP21";
 import Course_CSEBtech22_onwards from "./cse Btech 2022 Onwards";
 import Course_DD_CyberSecurity from "./cse Dual Degree CyberSecurity";
 import Course_DD_DataScience from "./cse Dual Degree DataScience";
+import Course_MCA_DataScience from "./cse MCA DS & I";
+import Course_MCA_ArtificialIntelligence from "./cse MCA AI & IOT"
+import Course_MTech_CS from "./cse Mtech CS"
+import Course_MTech_DS from "./cse MTech DS"
 import { PageLayout } from "../../styles/pagelayout";
 import { TabPage } from "../../styles/tabpage";
 import Table from "../../table";
+import filelink from "./FilePath.json"; 
+
 
 const Csesyllabus = () => {
   const [course, setCourse] = useState("programmesug");
@@ -20,6 +26,80 @@ const Csesyllabus = () => {
       url: `https://web.nitp.ac.in/dept/cse/syllabus/${folderName}/${item.coursecode}_${item.coursetitle}.docx`,
     }));
   };
+  const addurlMcads = (syllabusData) => {
+    return syllabusData.map((item) => {
+      const fileName = `${item.coursecode}_${item.coursetitle}.docx`;
+      const mcaData = filelink.MCA_DS_I.find((mcaItem) => mcaItem.Name === fileName);
+
+      if (mcaData) {
+        return {
+          ...item,
+          url: mcaData.URL,
+        };
+      } else {
+        return {
+          ...item,
+        };
+      }
+    });
+  };
+  const addurlMcaAI = (syllabusData) => {
+    return syllabusData.map((item) => {
+      // const fileName = `${item.coursecode}_${item.coursetitle}.docx`;
+      // const mcaData = filelink.MCA_AI_IOT.find((mcaItem) => mcaItem.Name === fileName);
+      const mcaData = filelink.MCA_AI_IOT.find(mcaData => mcaData.Name.startsWith(item.coursecode));
+
+
+      if (mcaData) {
+        return {
+          ...item,
+          url: mcaData.URL,
+        };
+      } else {
+        return {
+          ...item,
+        };
+      }
+    });
+  };
+  const addurlMTechCyber = (syllabusData) => {
+    return syllabusData.map((item) => {
+      // const fileName = `${item.coursecode}_${item.coursetitle}.docx`;
+      // const MTechCSData = filelink.MTECH_CS.find((MTechCSData) => MTechCSData.Name === fileName);
+      const MTechCSData = filelink.MTECH_CS.find(MTechCSData => MTechCSData.Name.startsWith(item.coursecode));
+
+      if (MTechCSData) {
+        return {
+          ...item,
+          url: MTechCSData.URL,
+        };
+      } else {
+        return {
+          ...item,
+        };
+      }
+    });
+  };
+  const addurlMTechData = (syllabusData) => {
+    return syllabusData.map((item) => {
+      // const fileName = `${item.coursecode}_${item.coursetitle}.docx`;
+      // const MTechCSData = filelink.MTECH_CS.find((MTechCSData) => MTechCSData.Name === fileName);
+      const MTechDSData = filelink.MTECH_DS.find(MTechDSData => MTechDSData.Name.startsWith(item.coursecode));
+
+      if (MTechDSData) {
+        return {
+          ...item,
+          url: MTechDSData.URL,
+        };
+      } else {
+        return {
+          ...item,
+        };
+      }
+    });
+  };
+
+
 
   useEffect(() => {}, [course]);
 
@@ -60,7 +140,7 @@ const Csesyllabus = () => {
                 >
                   UG Courses-2022 Onwards
                 </button>
-                <button
+                {/* <button
                   onClick={() => {
                     setCourse("programmespg");
                     setSyllabus(Mtech);
@@ -68,7 +148,41 @@ const Csesyllabus = () => {
                   className={course === "programmespg" ? "btnactive" : ""}
                 >
                   PG (M.Tech/MURP) Courses
+                </button> */}
+
+
+                <button
+                  onClick={() => {
+                    setCourse("mtechcyber");
+                    setSyllabus(addurlMTechCyber(Course_MTech_CS, "syllabus_of_M.Tech_CS"));
+                  }}
+                  className={course === "mtechcyber" ? "btnactive" : ""}
+                >
+                  M.Tech Cyber Security
                 </button>
+
+                {/* <button
+                  onClick={() => {
+                    setCourse("MCA program AI");
+                    setSyllabus(addurlMcaAI(Course_MCA_ArtificialIntelligence, "syllabus_of_MCA_Program_AI"));
+                  }}
+                  className={course === "programmes_MCA_AI" ? "btnactive" : ""}
+                >
+                  MCA (AI & IOT)
+                </button> */}
+
+<button
+                  onClick={() => {
+                    setCourse("mtechdata");
+                    setSyllabus(addurlMTechData(Course_MTech_DS, "syllabus_of_M.Tech_DS"));
+                  }}
+                  className={course === "mtechdata" ? "btnactive" : ""}
+                >
+                  M.Tech DataScience
+                </button>
+
+
+
                 <button
                   onClick={() => {
                     setCourse("programmesphd");
@@ -78,6 +192,11 @@ const Csesyllabus = () => {
                 >
                   PhD Courses
                 </button>
+                
+              </div>
+              <div style={{ height: "5px" }}></div>
+              <div className="probutton">
+                
                 <button
                   onClick={() => {
                     setCourse("programmes_dd_cyber_security");
@@ -96,6 +215,24 @@ const Csesyllabus = () => {
                 >
                   Dual Degree (Data Science and Engineering)
                 </button>
+                <button
+                  onClick={() => {
+                    setCourse("MCA program DS");
+                    setSyllabus(addurlMcads(Course_MCA_DataScience, "syllabus_of_MCA_Program_DS"));
+                  }}
+                  className={course === "programmes_MCA_DS" ? "btnactive" : ""}
+                >
+                  MCA (DS & I)
+                </button>
+                <button
+                  onClick={() => {
+                    setCourse("MCA program AI");
+                    setSyllabus(addurlMcaAI(Course_MCA_ArtificialIntelligence, "syllabus_of_MCA_Program_AI"));
+                  }}
+                  className={course === "programmes_MCA_AI" ? "btnactive" : ""}
+                >
+                  MCA (AI & IOT)
+                </button>
               </div>
             </div>
           </div>
@@ -112,6 +249,7 @@ const Csesyllabus = () => {
               </li>
             </ul>
           )}
+          
           {Array.isArray(syllabus) && syllabus.length > 0 && (
             <Table style={{ width: "100%", marginTop: "20px" }}>
               <thead>

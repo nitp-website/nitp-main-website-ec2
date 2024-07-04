@@ -104,6 +104,7 @@ const BISdashboard = () => {
 
         .table-container {
           overflow-x: auto;
+          max-height: 600px; /* Adjust this height as needed */
         }
 
         .styled-table {
@@ -115,10 +116,14 @@ const BISdashboard = () => {
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
         }
 
-        .styled-table thead tr {
+        .styled-table thead th {
           background-color: #009879;
           color: #ffffff;
           text-align: left;
+          padding: 12px 15px;
+          position: sticky;
+          top: 0;
+          z-index: 2;
         }
 
         .styled-table th,

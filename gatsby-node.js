@@ -115,3 +115,16 @@ exports.onCreateNode = async ({
   }
  }
 }
+// gatsby-node.js
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage, deletePage } = actions;
+
+  if (page.path === '/dev-404-page/') {
+    deletePage(page);
+    createPage({
+      ...page,
+      path: 'src/pages/404.js',
+      matchPath: '/*',
+    });
+  }
+};

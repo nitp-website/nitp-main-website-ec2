@@ -1,16 +1,16 @@
 const Datad = [
  {
   heading: "Digital Initiatives of NIT Patna",
-  title: "GIAN Course PFB the links",
+  title: "Will be soon available !!!",//GIAN Course PFB the links
   links: [
-   "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=8481eb96-881a-4a04-ba70-b30449feeea4",
-   "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=449b9433-c336-4eec-8430-aa164ee27770",
-   "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=ea39bab1-3a53-4977-bd25-5bc1e007d502",
-   "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=5559e621-ad4c-4f15-951c-c6618cc8b90b",
-   "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=08d6a31c-c935-4f0d-a53a-689bcccdb14e",
-   "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=91529777-74db-4f1b-820c-7504a5c904c0",
-   "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=3859882e-ae4e-482b-92c1-768cf2211735",
-   "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=3848b244-8218-47a0-a914-8b9d3ee219ec",
+  //  "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=8481eb96-881a-4a04-ba70-b30449feeea4",
+  //  "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=449b9433-c336-4eec-8430-aa164ee27770",
+  //  "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=ea39bab1-3a53-4977-bd25-5bc1e007d502",
+  //  "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=5559e621-ad4c-4f15-951c-c6618cc8b90b",
+  //  "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=08d6a31c-c935-4f0d-a53a-689bcccdb14e",
+  //  "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=91529777-74db-4f1b-820c-7504a5c904c0",
+  //  "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=3859882e-ae4e-482b-92c1-768cf2211735",
+  //  "https://webcast.nitp.ac.in/Panopto/Pages/Viewer.aspx?id=3848b244-8218-47a0-a914-8b9d3ee219ec",
   ],
  },
 ]
@@ -641,11 +641,7 @@ const Format = [
  {
   heading: "Format",
   data: [
-   //  {
-   //   para: "SOP to issue Original Degree Certificate",
-   //   link:
-   //    "http://web.nitp.ac.in/downloads/Guidelines%20cum%20checklist%20to%20get%20process%20of%20academic%20document.pdf",
-   // },
+    
    {
     para: "Guidelines cum checklist to get process of academic document",
     link:
@@ -655,70 +651,67 @@ const Format = [
     para:
      "Format for issue of Grade Card / Provisional / Transcript from Exam Section",
     link:
-     // "http://web.nitp.ac.in/uploads22/REQUEST_LETTER_CUM_DOCUMENT_ISSUE_FORM.pdf",
+     
      "https://drive.google.com/file/d/1AhtQCtdBLB-FG-JldD3_j8NPTsj4EONp/view?usp=drivesdk",
    },
    {
     para: "Attestation form for grade cards",
     link:
-     // "http://web.nitp.ac.in/uploads22/REQUEST_LETTER_CUM_DOCUMENT_ISSUE_FORM.pdf",
+     
      "https://drive.google.com/file/d/1AjHBBA3ca9s-T_jgtocOz5EYaJOzhbHa/view?usp=drivesdk",
    },
    {
     para: "1-SOP to issue Original Degree Certificate",
-    // link: "http://web.nitp.ac.in/uploads22/Degree_SOP (6).pdf",
+   
     link:
      "https://drive.google.com/file/d/1ojThnsLJgSUHY4Zr0QCTGHdxOUvLfY6t/view?usp=sharing",
    },
    {
     para: "2-SOP to issue Institute Leaving/Transfer Cum Migration Certificate",
-    //link: "http://web.nitp.ac.in/uploads22/Migration_SOP (1).pdf",
+    
     link:
      "https://drive.google.com/file/d/1AymHBdkagkjfUfklSer4pg-3iaqlXhjN/view?usp=sharing",
    },
    {
     para:
      "3-SOP for Refund of DRCC Education Loan under Bihar Student Credit Card Scheme",
-    //link: "http://web.nitp.ac.in/uploads22/DRCC_Refund_SOP.pdf",
+ 
     link:
      "https://drive.google.com/file/d/1KXs3dru2FJZ5q_kV1h36TK6E7EkOO0n9/view?usp=drivesdk",
    },
    {
     para:
      "4-SOP for Adjustment of DRCC Education Loan under Bihar Student Credit Card Scheme",
-    // link: "http://web.nitp.ac.in/uploads22/DRCC_Adjustment_SOP.pdf",
+  
     link:
      "https://drive.google.com/file/d/1t7NsBr6xqNqgUyuuxW-l-vFE35zrc3vi/view?usp=sharing",
    },
    {
-    // para: "5-Application for Demand Letter.",
+
     para: "5-SOP for Educational Verification",
-    // link:
-    //  "http://web.nitp.ac.in/uploads23/Application%20for%20Demand%20Letter.pdf",
+   
     link:
      " https://drive.google.com/file/d/1m5VB8SMkkllmXRZjaxWi8xc8E7PMGfkB/view?usp=sharing",
    },
    {
-    // para: "6-Application for Hostel & Mess Fee Receipt.",
+    
     para: "6-Format of Application to Dean(Academic)",
-    // link:
-    //  "http://web.nitp.ac.in/uploads23/Application%20for%20Hostel%20&%20Mess%20Fee%20Receipt.pdf",
+    
     link:
      "https://drive.google.com/file/d/19ZBDsaDluGRBJO-LgBtdKYqo_8CQrbmx/view?usp=sharing",
    },
    {
-    // para: "7-SOP for Educational Verification of Students.",
+
     para: "7-Format of Application for Demand Letter",
-    //link: "http://web.nitp.ac.in/uploads23/Educational%20Verification_SOP.pdf",
+    
     link:
      "https://drive.google.com/file/d/18F1po6Nxh7ashYBG4C4A9exOaaB5-Jy2/view?usp=sharing",
    },
    {
-    // para: "8-SOP for Cancellation of Admission",
+
     para:
      "8-Format of Application for Fee Receipt for Bank Loan and DRCC Adjustment Only",
-    // link:
-    //  "http://web.nitp.ac.in/uploads22/Application for Cancellation of Admission.pdf",
+    
     link:
      "https://drive.google.com/file/d/1XHKMmDhheGwL67m-q42FqPMAU-a4X0Hu/view?usp=sharing",
    },
