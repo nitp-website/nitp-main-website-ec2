@@ -23,6 +23,8 @@ const Departments = [
  { url: "/physics", title: "Physics" },
 
  { url: "/mae", title: "Mechatronics & Automation Engineering" },
+
+ { url: "/cet", title: "Chemical Engineering and Technology" },
 ]
 
 const Admin = [
