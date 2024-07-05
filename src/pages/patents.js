@@ -36,8 +36,7 @@ const PatentsTable = () => {
         const facultyName = await fetchFacultyName(patent.email);
         for (const publication of patent.publications) {
           if (publication.type === "patent") {
-            // Sort patents by year in descending order (latest first)
-            // **Sort within the loop**
+
           
             patentsWithFaculty.sort((a, b) => b.year - a.year);
 
@@ -57,7 +56,29 @@ const PatentsTable = () => {
           // Sort the patentsWithFaculty array after the loop
        
     patentsWithFaculty.sort((a, b) => b.year - a.year);
-
+    patentsWithFaculty.sort((a, b) => {
+      // Sort by year first
+      if (a.year !== b.year) {
+        return b.year - a.year;
+      } else {
+        // If years are equal, prioritize patents with filedYear
+        if (a.filedyear && b.filedyear) {
+          // If both have filedYear, sort by filedYear in descending order
+          return b.filedyear - a.filedyear;
+        } else if (a.filedyear) {
+          // If only 'a' has filedYear, move it to the end
+          return 1; 
+        } else if (b.filedyear) {
+          // If only 'b' has filedYear, keep it in its current position
+          return -1;
+        } else {
+          // If neither has filedYear, keep them in their current positions
+          return 0;
+        }
+      }
+    });
+    patentsWithFaculty.sort((a, b) => a.year - b.year);
+    patentsWithFaculty.sort((a, b) => b.year - a.year);
       setPatents(patentsWithFaculty);
     } catch (error) {
       setError(error);
