@@ -62,6 +62,11 @@ const AcademicsList = [
   // img: "/test.svg",
  },
  {
+   title: "Publications",
+   relPath: "/publications",
+   // img: "/test.svg",
+  },
+ {
     title: "BIS Dashboard",
     
     relPath:"/bis",
