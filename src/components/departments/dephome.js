@@ -84,7 +84,7 @@ const Dephomepage = ({
        <div className="layoutrow" id="about">
         <div className="layoutabout">
          <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
-          About
+          About Us
          </h1>
 
          <div className="row">

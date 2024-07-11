@@ -102,7 +102,7 @@ const Home = [
   sub: [
    {
     url: "/about",
-    title: "About",
+    title: "About Us",
     data: "about",
     img: "/department/about.svg",
    },
@@ -182,7 +182,7 @@ const Home = [
 const About = [
  {
   url: "/about",
-  title: "About",
+  title: "About Us",
   data: "About",
  },
  {
@@ -343,6 +343,11 @@ const Academics = [
    {
     url: "/patents",
     title: "Patents",
+    data: "",
+   },
+   {
+    url: "/publications",
+    title: "Publications",
     data: "",
    },
    {

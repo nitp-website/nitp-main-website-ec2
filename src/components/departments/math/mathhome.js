@@ -122,7 +122,7 @@ export const activities = () => {
 
 export const datalist = [
  {
-  title: "About",
+  title: "About Us",
   data: "about",
   // img: "/department/about.svg",
  },
