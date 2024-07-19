@@ -16,7 +16,13 @@ const Facultypage = ({ title, url, dept }) => {
     axios
       .get(facultiesUrl)
       .then(res => {
-        const facultyData = res.data;
+        let facultyData = res.data;
+        
+        // Filter out "Officers" if the URL is for all faculties
+        if (url === "faculties") {
+          facultyData = facultyData.filter(faculty => faculty.department !== "Officers");
+        }
+
         facultyData.sort((a, b) => a.name.localeCompare(b.name));
         setFaculties(facultyData);
         setData(facultyData);
@@ -24,7 +30,7 @@ const Facultypage = ({ title, url, dept }) => {
       .catch(e => {
         console.log(e);
       });
-  }, []);
+  }, [facultiesUrl, url]);
 
   useEffect(() => {
     let result = faculties?.filter(item =>
@@ -48,7 +54,6 @@ const Facultypage = ({ title, url, dept }) => {
       "Associate Professor",
       "Assistant Professor",
       "Temporary Faculty"
-
     ];
 
     return data.sort((a, b) => {
