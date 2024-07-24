@@ -312,6 +312,34 @@ const DataNotice = [
 
 const Admissions = [
   {
+    heading: "B.Tech./Dual Degree/B.Arch. 2024",
+    title:
+     "",
+    data: [
+      {
+        para:
+         "Physical reporting notice for admission to UG programme through JoSAA/CSAB/DASA-2024",
+        link: "https://drive.google.com/file/d/1kdKZ5nUPbKDrn64Z0iidCZSsuyVChM4-/view?usp=sharing",
+       },
+     
+
+    ],
+   },
+   {
+    heading: "MCA 2024",
+    title:
+     "",
+    data: [
+      {
+        para:
+         "Physical reporting notice for admission to MCA programme through NIMCET-2024",
+        link: "https://drive.google.com/file/d/1u9HUY1ftNHRAlsET9_F7pH37SNPugT2H/view?usp=drivesdk",
+       },
+     
+
+    ],
+   },
+  {
     heading: "Admission in UG/PG/PhD programme through Study In India (SII)",
     title: "1. Minimum Qualification:",
     data: [
@@ -390,6 +418,11 @@ const Admissions = [
     title:
      "",
     data: [
+      {
+        para:
+         "The prospective candidates are advised to visit the JoSSA/CSAB website regularly for updates and other details regarding the online counseling process.",
+        link: "https://josaa.nic.in/",
+       },
      {
       para:
        "The prospective candidates are advised to visit the JoSSA/CSAB website regularly for updates and other details regarding the online counseling process.",

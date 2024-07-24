@@ -301,15 +301,26 @@ const Academics = [
     title: "Programmes",
     data: "programmes",
    },
-   {
-    url: "/academics",
-    title: "Departments",
-    data: "depts",
-   },
+  
    {
     url: "/academics",
     title: "Academic Notices",
     data: "Notices",
+   },
+   {
+    url: "/academics",
+    title: "Fee Structure",
+    data: "fee",
+   },
+   {
+    url: "/academics",
+    title: "Regulation & Curricula",
+    data: "curricula",
+   },
+   {
+    url: "/academics",
+    title: "Departments",
+    data: "depts",
    },
    {
     // url: "https://web.nitp.ac.in/uploads22/Academic_cal._Even_2022_23.pdf",
@@ -317,11 +328,7 @@ const Academics = [
     title: "Academic Calendar",
     data: "",
    },
-   {
-    url: "/academics",
-    title: "Fee Structure",
-    data: "fee",
-   },
+   
    {
     url: "/academics",
     title: "Format of Official Documents",
@@ -337,11 +344,7 @@ const Academics = [
     title: "Digital Initiatives",
     data: "digital",
    },
-   {
-    url: "/academics",
-    title: "Regulation & Curricula",
-    data: "curricula",
-   },
+   
    {
     url: "/patents",
     title: "Patents",
