@@ -651,22 +651,49 @@ const Academicspage = () => {
         </div>
 
         <div className="row rowmarl3">
-         <h1>Notice</h1>
+         <h1>Academic Notice</h1>
         </div>
         <div className="row rowmarl3 notice">
-         {notices != undefined
-          ? notices.map(notice => {
-             if (notice.title != "") {
-              return (
-               <Notice
-                detail={notice.title}
-                time={notice.timestamp}
-                attachments={notice.attachments}
-               />
-              )
-             }
-            })
-          : null}
+        
+       {notices &&
+        notices.map(notice => {
+         if (notice.title != "" && notice.important == 1) {
+          return (
+           <Notice
+            detail={notice.title}
+            time={notice.timestamp}
+            key={notice.id}
+            attachments={notice.attachments}
+            imp={notice.important}
+            link={
+             notice.notice_link && JSON.parse(notice.notice_link).url
+              ? JSON.parse(notice.notice_link).url
+              : ""
+            }
+           />
+          )
+         }
+        })}
+       {notices &&
+        notices.map(notice => {
+         if (notice.title != "" && notice.important != 1) {
+          return (
+           <Notice
+            detail={notice.title}
+            time={notice.timestamp}
+            key={notice.id}
+            attachments={notice.attachments}
+            imp={notice.important}
+            link={
+             notice.notice_link && JSON.parse(notice.notice_link).url
+              ? JSON.parse(notice.notice_link).url
+              : ""
+            }
+           />
+          )
+         }
+        })}
+     
         </div>
        </div>
       )}
