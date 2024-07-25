@@ -8,7 +8,7 @@ const Deansinfo = [
   type: "Dean",
  },
  {
-  name: "Prof. Vivekanand Singh",
+  name: "Prof. (Dr.) Ramesh Kumar",
   designation: "Dean, Research & Consultancy",
   type: "Dean",
  },
@@ -18,12 +18,12 @@ const Deansinfo = [
   type: "Dean",
  },
  {
-  name: "Prof.(Dr.) Sanjeev Sinha",
+  name: "Prof. Vivekanand Singh",
   designation: "Dean, Academic",
   type: "Dean",
  },
  {
-  name: "Prof. Amar Nath Sinha",
+  name: "Prof. (Dr.) Manoj Kumar",
   designation: "Dean, Faculty Welfare",
   type: "Dean",
  },
