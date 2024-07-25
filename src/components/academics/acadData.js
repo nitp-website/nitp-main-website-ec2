@@ -339,6 +339,20 @@ const Admissions = [
 
     ],
    },
+   {
+    heading: "M.Tech./M.Arch./MURP 2024",
+    title:
+     "",
+    data: [
+      {
+        para:
+         "Physical reporting notice for admission to PG programme through CCMT 2024",
+        link: "https://drive.google.com/file/d/12EJZ-Hc1bQ2dQKA-qKZCSyCAveuFsID1/view",
+       },
+     
+
+    ],
+   },
   {
     heading: "Admission in UG/PG/PhD programme through Study In India (SII)",
     title: "1. Minimum Qualification:",
@@ -423,11 +437,7 @@ const Admissions = [
          "The prospective candidates are advised to visit the JoSSA/CSAB website regularly for updates and other details regarding the online counseling process.",
         link: "https://josaa.nic.in/",
        },
-     {
-      para:
-       "The prospective candidates are advised to visit the JoSSA/CSAB website regularly for updates and other details regarding the online counseling process.",
-      link: "https://josaa.nic.in/",
-     },
+     
      {
       para:
        "Contact Details: (Email ID: acad.help@nitp.ac.in Contact: 0612 2372715 Extension no 166) Center In-charge: Prof. Sanjeev Sinha Contact: 0612-2372715 (Ext. 151), Dy. Center In-charge: Prof. M P Singh, 0612-2372715 (Ext-201.) and Dy.Center In-Charge: Prof. Bharat Gupta 0612-2372715 (Ext-301.)",
