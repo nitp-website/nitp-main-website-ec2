@@ -707,13 +707,13 @@ const Format = [
      para: "1-SOP to issue Original Degree Certificate",
     
      link:
-      "https://drive.google.com/file/d/1ojThnsLJgSUHY4Zr0QCTGHdxOUvLfY6t/view?usp=sharing",
+      "https://drive.google.com/file/d/1vwl1dgautk3T9rQeRf5NcmC2HfRST51K/view?usp=drivesdk",
     },
     {
      para: "2-SOP to issue Institute Leaving/Transfer Cum Migration Certificate",
      
      link:
-      "https://drive.google.com/file/d/1AymHBdkagkjfUfklSer4pg-3iaqlXhjN/view?usp=sharing",
+      "https://drive.google.com/file/d/1vxaVrC5jnhulIyrCxIIb4Iy8pEjsB9gO/view?usp=drivesdk",
     },
     {
      para:
@@ -734,7 +734,7 @@ const Format = [
      para: "5-SOP for Educational Verification",
     
      link:
-      " https://drive.google.com/file/d/1m5VB8SMkkllmXRZjaxWi8xc8E7PMGfkB/view?usp=sharing",
+      " https://drive.google.com/file/d/1w-DeevE6jNKH7XHmtjxDx2FZ2vfQ0oGa/view?usp=drivesdk",
     },
     {
      
