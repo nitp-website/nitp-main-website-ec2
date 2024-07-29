@@ -319,7 +319,7 @@ const Admissions = [
       {
         para:
          "Physical reporting notice for admission to UG programme through JoSAA/CSAB/DASA-2024",
-        link: "https://drive.google.com/file/d/1kdKZ5nUPbKDrn64Z0iidCZSsuyVChM4-/view?usp=sharing",
+        link: "https://drive.google.com/file/d/1ltvaLvEH6ojHbINadtom7rG4u5ym08gH/view",
        },
      
 
