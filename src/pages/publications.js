@@ -13,7 +13,7 @@ const fetchFacultyDetails = async (email) => {
     };
   } catch (error) {
     console.error("Error fetching faculty details:", error);
-    return { name: "", department: "Unknown" };
+    return { name: "", department: "Computer Science and Engineering" };
   }
 };
 
