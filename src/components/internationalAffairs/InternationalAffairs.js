@@ -36,7 +36,6 @@ export const about = () => {
     programmes (bachelor's, master's and doctoral) at NIT Patna are driven by a
     well-known faculty, many of whom are reputed for their research
     contributions internationally.
-    <br />
     Members of the faculty of the institute have won many prestigious awards and
     recognitions, including the word ranking of top 2% scientist given by
     Stanford University, USA, Royal Society fellowships and awards, AD
