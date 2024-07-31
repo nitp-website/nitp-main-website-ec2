@@ -40,11 +40,7 @@ export const about = () => {
     Members of the faculty of the institute have won many prestigious awards and
     recognitions, including the word ranking of top 2% scientist given by
     Stanford University, USA, Royal Society fellowships and awards, AD
-    Scientific Index etc. At present the Institute has seven disciplines viz.
-    Architecture and planning, Civil Engg., Compute Science & Engg., Electrical
-    Engg., Electronics & Communication Engg., Mechanical Engg., Physics and
-    Mathematics and well established departments of Humanities and Social
-    Science. The Institute alumni have distinguished themselves through their
+    Scientific Index etc. At present the Institute has nine disciplines viz. Computer Science & Engg., Electronics & Communication Engg., Electrical Engg., Civil Engg., Mechanical Engg., Mechatronics & Automation Engg., Chemical Engg. and Technology, Materials Science & Engg., Architecture and planning, and well established departments of Humanities and Social Science, Physics, Chemistry and Mathematics. The Institute alumni have distinguished themselves through their
     achievements in and contributions to leading researchers, industry,
     academics, business, government and social domains. Located at on the south
     bank of holy river Ganges behind Gandhi Ghat, one of the most important and
