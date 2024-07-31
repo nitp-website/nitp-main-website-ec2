@@ -1,78 +1,36 @@
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import React from "react"
 import Slider from "../Slider/Slider"
 
 export const Nitpbackimg = () => {
- //     const data = useStaticQuery(graphql`
- //     query {
- //      nitpBackImages: allFile(
- //       filter: {
- //        relativePath: {
- //         in: [
- //          "home/img/homebg-10.png"
- //          "home/img/homebg-9.png"
- //          "home/img/homebg-11.png"
- //          "home/img/homebg-1.jpg"
- //          "home/img/homebg-2.jpg"
- //          "home/img/homebg-5.jpg"
- //          "home/img/sac.jpeg"
- //          "home/img/homebg-3.jpg"
- //          "home/img/homebg-4.jpg"
- //          "home/img/homebg-6.jpg"
- //         ]
- //        }
- //       }
- //      ) {
- //       nodes {
- //        childImageSharp {
- //         fluid(maxWidth: 1920) {
- //          ...GatsbyImageSharpFluid
- //         }
- //        }
- //       }
- //      }
- //     }
- //    `)
- //    const images = data.nitpBackImages.nodes.map(image => (
- //     <Img
- //      fluid={image.childImageSharp.fluid}
- //      imgStyle={{
- //       objectFit: "cover",
- //       maxHeight: `90vh`,
- //       objectPosition: "center",
- //      }}
- //      style={{ maxHeight: `90vw`, height: `100%` }}
- //     />
- //    ))
+  
+  const customImageUrls = [
+    "https://i.postimg.cc/sgvVmgT5/Screenshot-2024-07-31-154315.png",
+"https://i.postimg.cc/W3prhj1t/homebg-1.jpg",
+"https://i.postimg.cc/VN8XPXyq/homebg-10.png",
+"https://i.postimg.cc/XvkdjX3T/homebg-11.png",
+"https://i.postimg.cc/zBdhhMy7/homebg-2.jpg",
+"https://i.postimg.cc/mktHywMs/homebg-3.jpg",
+"https://i.postimg.cc/PJ983wz8/homebg-4.jpg",
+"https://i.postimg.cc/J72J4fV4/homebg-5.jpg",
+"https://i.postimg.cc/6psvCCpk/homebg-6.jpg",
+"https://i.postimg.cc/QdpWmVBH/sac.jpg"
 
- const data = useStaticQuery(graphql`
-  query {
-   allHomeBannerImages {
-    nodes {
-     featuredImg {
-      childImageSharp {
-       fluid(maxWidth: 1920) {
-        ...GatsbyImageSharpFluid
-       }
-      }
-     }
-    }
-   }
-  }
- `)
+  ]
 
- const images = data.allHomeBannerImages.nodes.map(node => (
-  <Img
-   fluid={node.featuredImg.childImageSharp.fluid}
-   imgStyle={{
-    objectFit: "cover",
-    maxHeight: `90vh`,
-    objectPosition: "center",
-   }}
-   style={{ maxHeight: `90vw`, height: `100%` }}
-  />
- ))
+  
+  const images = customImageUrls.map((url, index) => (
+    <img
+      key={index}
+      src={url}
+      alt={`Custom Banner ${index + 1}`}
+      style={{
+        objectFit: "fill",
+        maxHeight: "100vh",
+        width: "100%",
+        height: "100%",
+      }}
+    />
+  ))
 
- return <Slider dataSlider={images} type={"homePageImg"} />
+  return <Slider dataSlider={images} type={"homePageImg"} />
 }
