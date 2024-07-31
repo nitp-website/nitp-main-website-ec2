@@ -312,13 +312,41 @@ const DataNotice = [
 
 const Admissions = [
   {
+    heading: "",
+    title:
+     "Schedule for reporting, classes and orientation programme for newly admitted UG/PG/Ph.D students. [2024-25] ",
+    data: [
+      {
+        para:
+         "Schedule for reporting, classes and orientation programme for newly admitted UG/PG/Ph.D students. [2024-25] [View Notice]",
+        link: "https://drive.google.com/file/d/1WBBgIcBLu1vxg8l85an8jbMFsgwlWUrR/view",
+       },
+     
+
+    ],
+   },
+   {
+    heading: "",
+    title:
+     "Provisional list of Candidates eligible for admission in PhD(July-Dec'2024) ",
+    data: [
+      {
+        para:
+         "Provisional list of Candidates eligible for admission in PhD(July-Dec'2024) [View Notice]",
+        link: "https://drive.google.com/file/d/11_Gx47tva-BWOXcyQsbTFwpBQU_bzMI7/view",
+       },
+     
+
+    ],
+   },
+  {
     heading: "B.Tech./Dual Degree/B.Arch. 2024",
     title:
      "",
     data: [
       {
         para:
-         "Physical reporting notice for admission to UG programme through JoSAA/CSAB/DASA-2024",
+         "Physical reporting notice for admission to UG programme through JoSAA/CSAB/DASA-2024 [View Notice]",
         link: "https://drive.google.com/file/d/1ltvaLvEH6ojHbINadtom7rG4u5ym08gH/view",
        },
      
@@ -332,7 +360,7 @@ const Admissions = [
     data: [
       {
         para:
-         "Physical reporting notice for admission to MCA programme through NIMCET-2024",
+         "Physical reporting notice for admission to MCA programme through NIMCET-2024 [View Notice]",
         link: "https://drive.google.com/file/d/1u9HUY1ftNHRAlsET9_F7pH37SNPugT2H/view?usp=drivesdk",
        },
      
@@ -346,7 +374,7 @@ const Admissions = [
     data: [
       {
         para:
-         "Physical reporting notice for admission to PG programme through CCMT 2024",
+         "Physical reporting notice for admission to PG programme through CCMT 2024 [View Notice]",
         link: "https://drive.google.com/file/d/12EJZ-Hc1bQ2dQKA-qKZCSyCAveuFsID1/view",
        },
      

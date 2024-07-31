@@ -5,7 +5,7 @@ export const HomeStyle = styled.div`
  background-color: ${props => props.theme.backgroundColor};
  .nitpbackimg {
   width: 100%;
-  max-height: 70vw;
+  max-height: 100vw;
  }
  .tablinkcover {
   display: none;
@@ -32,7 +32,7 @@ export const HomeStyle = styled.div`
  .bgimgwrap {
   overflow: hidden;
   width: 100%;
-  max-height: 85vh;
+  max-height: 100vh;
   position: relative;
   /* margin-left: 5%; */
  }
@@ -191,7 +191,7 @@ export const HomeStyle = styled.div`
  }
  @media (min-width: 768px) {
   .bgimgwrap {
-   margin-top: 0;
+   margin-top: 7vh;
   }
  }
 `
