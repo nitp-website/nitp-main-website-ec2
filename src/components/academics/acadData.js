@@ -314,6 +314,20 @@ const Admissions = [
   {
     heading: "",
     title:
+     "Notice regarding Hostel facility for UG Students ",
+    data: [
+      {
+        para:
+         "Notice regarding Hostel facility for UG Students. [View Notice]",
+        link: "https://drive.google.com/file/d/1u2CYZs1RuehT0vmdcJROvtIX8y8Qe90f/view",
+       },
+     
+
+    ],
+   },
+  {
+    heading: "",
+    title:
      "Schedule for reporting, classes and orientation programme for newly admitted UG/PG/Ph.D students. [2024-25] ",
     data: [
       {
@@ -347,7 +361,7 @@ const Admissions = [
       {
         para:
          "Physical reporting notice for admission to UG programme through JoSAA/CSAB/DASA-2024 [View Notice]",
-        link: "https://drive.google.com/file/d/1ltvaLvEH6ojHbINadtom7rG4u5ym08gH/view",
+        link: "https://drive.google.com/file/d/1wK0KO5Nju8Lo_TaSdivIZDbhWLCfFZMh/view?usp=sharing",
        },
      
 
