@@ -24,9 +24,13 @@ const Departments = [
 
  { url: "/mae", title: "Mechatronics & Automation Engineering" },
 
- { url: "/cet", title: "Chemical Engineering and Technology" },
+ { url: "/chet", title: "Chemical Engineering and Technology" },
 
  { url: "/mse", title: "Materials Science & Engineering" },
+
+//  ['mae','Mechatronics and  Automation Engineering'],
+//  ['mse','Materials Science and Engineering'],
+//  ['chet','Chemical Engineering and Technology'],
 ]
 
 const Admin = [
