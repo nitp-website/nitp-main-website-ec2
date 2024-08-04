@@ -68,7 +68,7 @@ export const contact = () => {
 
    <div className="img img-12">
     <img
-     src=""
+     src="https://i.postimg.cc/MG83CLnm/Screenshot-2024-08-04-131629.png"
      alt="hodImage"
     />
     <br />
