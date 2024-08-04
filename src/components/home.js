@@ -149,7 +149,7 @@ const Home = () => {
        </Link>
       </div>
       <div className="event-row">
-       {events &&
+       {Array.isArray(events) &&
         events.map((event, index) => {
          const date = new Date(event.eventStartDate)
          const day = date.getDate()
@@ -255,7 +255,7 @@ const Home = () => {
 
     <div className="news-row">
      <div className="news-viewbox" data-aos="fade-left" data-aos-duration="200">
-      {news &&
+      {Array.isArray(news)&&
        news.map(news => {
         Date.prototype.formatDDMMYYYY = function () {
          return (
