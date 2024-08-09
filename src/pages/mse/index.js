@@ -1,26 +1,41 @@
-import React from "react";
-import Layout from "../../components/layout";
-import SEO from "../../components/seo";
-import "./mae.css" ;
+import React from "react"
+import Layout from "../../components/layout"
+import SEO from "../../components/seo"
+import Dephomepage from "../../components/departments/dephome"
+import {
+ routeName,
+ title,
+ titleDescription,
+ about,
+ mission,
+ labs,
+ achievements,
+ activities,
+ others,
+ vision,
+ contact,
+ datalist,
+ research,
+} from "../../components/departments/mse/msehome"
+const Material= () => (
+ <Layout>
+  <SEO title="Department of Materials Science & Engineering " />
+  <Dephomepage
+   routeName={routeName}
+   title={title}
+   TitleDescription={titleDescription}
+   About={about}
+   Mission={mission}
+   Research={research}
+   Vision={vision}
+   Contact={contact}
+   Labs={labs}
+   Achievements={achievements}
+   Activities={activities}
+   Extras={others}
+   datalist={datalist}
+  />
+ </Layout>
+)
 
-const title = "Department of Materials Science & Engineering ";
-
-const Mse = () => {
-  return (
-    <>
-      <Layout>
-        <SEO title="MSE" />
-        <div className="container">
-          <h1 className="title">
-            {title}
-          </h1>
-          <div className="center-screen">
-            <p>Data to be updated soon</p>
-          </div>
-        </div>
-      </Layout>
-    </>
-  );
-};
-
-export default Mse;
+export default Material

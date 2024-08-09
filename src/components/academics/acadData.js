@@ -314,6 +314,20 @@ const Admissions = [
   {
     heading: "",
     title:
+     "Notice regarding balance fee payment  for newly admitted UG/PG/Ph.D students ,2024-25 through JoSAA/CSAB/DASA/NIMCET/CCMT/Ph.D.",
+    data: [
+      {
+        para:
+         "Notice regarding balance fee payment. [View Notice]",
+        link: "https://drive.google.com/file/d/1tJZAsY5a2ayLseXIkrOo2jcwXsXnJ6bB/view",
+       },
+     
+
+    ],
+   },
+  {
+    heading: "",
+    title:
      "Notice regarding Hostel facility for UG Students ",
     data: [
       {
