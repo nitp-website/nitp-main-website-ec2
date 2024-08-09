@@ -93,7 +93,7 @@ export const contact = () => {
 
    <div className="img img-12">
     <img
-     src="https://drive.google.com/thumbnail?authuser=0&sz=w320&id=1o2sx8d4oS7Uckisey-MyTgTA-Nn19vZu"
+     src="https://i.postimg.cc/L5PjMTWR/image.png"
      alt="hodImage"
     />
     <br />
