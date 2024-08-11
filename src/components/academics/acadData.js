@@ -312,6 +312,25 @@ const DataNotice = [
 
 const Admissions = [
   {
+    "heading": "",
+    "title": "Important Links and Instructions for Admission Process 2024-25",
+    "data": [
+      {
+        "para": "Link for online admission form. [Access Form]",
+        "link": "https://mis.nitp.ac.in/Admission/Login.aspx"
+      },
+      {
+        "para": "SOP for filling out the admission form. [View SOP]",
+        "link": "https://drive.google.com/file/d/1GuE4azQkUYQORN83FBGsqfDuwDMoUMF1/view"
+      },
+      {
+        "para": "QR Code for payment of applicable fee. [View QR Code]",
+        "link": "https://drive.google.com/file/d/1ORCoboRNFmKITn5RxtL7kPdMovH5JrjP/view"
+      }
+    ]
+  }
+,  
+  {
     heading: "",
     title:
      "Notice regarding balance fee payment  for newly admitted UG/PG/Ph.D students ,2024-25 through JoSAA/CSAB/DASA/NIMCET/CCMT/Ph.D.",
