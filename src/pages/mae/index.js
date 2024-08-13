@@ -19,7 +19,7 @@ import {
 } from "../../components/departments/mae/maehome"
 const Material= () => (
  <Layout>
-  <SEO title="Materials Science and Engineering" />
+  <SEO title="Mechatronics and Automation Engineering"/>
   <Dephomepage
    routeName={routeName}
    title={title}
