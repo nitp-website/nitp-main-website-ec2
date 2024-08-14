@@ -325,7 +325,7 @@ const Admissions = [
       },
       {
         "para": "QR Code for payment of applicable fee. [View QR Code]",
-        "link": "https://drive.google.com/file/d/1ORCoboRNFmKITn5RxtL7kPdMovH5JrjP/view"
+        "link": "https://drive.google.com/file/d/1MFBfG6lkXK0ddkgYijvlWITwO4EdoXVC/view"
       }
     ]
   }
