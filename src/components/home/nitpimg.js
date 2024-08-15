@@ -4,6 +4,7 @@ import Slider from "../Slider/Slider"
 export const Nitpbackimg = () => {
   
   const customImageUrls = [
+    "https://i.postimg.cc/zXfhv3R9/Screenshot-2024-08-15-101217.png",
     "https://i.postimg.cc/c4rY66jK/Screenshot-2024-08-12-222002.png",
 "https://i.postimg.cc/sgvVmgT5/Screenshot-2024-07-31-154315.png",
 "https://i.postimg.cc/W3prhj1t/homebg-1.jpg",
