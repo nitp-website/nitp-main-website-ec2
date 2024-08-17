@@ -312,6 +312,20 @@ const DataNotice = [
 
 const Admissions = [
   {
+    heading: "",
+    title:
+     "Notice regarding Student Induction programme for UG,PG,Ph.D. admitted in the session 2024-25",
+    data: [
+      {
+        para:
+         "Notice regarding Student Induction programme. [View Notice]",
+        link: "https://drive.google.com/file/d/1cMIdcjOAjy76zGZIrWl0NkaqcbN-t08H/view",
+       },
+     
+
+    ],
+   },
+  {
     "heading": "",
     "title": "Important Links and Instructions for Admission Process 2024-25",
     "data": [
