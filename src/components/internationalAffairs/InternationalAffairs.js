@@ -25,8 +25,8 @@ export const about = () => {
     Education, Government of India after rechristening the erstwhile Bihar
     College of Engineering Patna on 28. 01. 2004. The institute is well
     recognised in the field of engineering education and research. NIT Patna has
-    been ranked 56 by National Institutional Ranking Framework (NIRF),
-    Government of India, Ranking 2023 in engineering category. It currently has
+    been ranked 55 by National Institutional Ranking Framework (NIRF),
+    Government of India, Ranking 2024 in engineering category. It currently has
     about 6000 students and 500 teaching and non-teaching staff. NIT Patna will
     soon set up its additional campus almost 30 km from the state capital, Patna
     at Bihta. The master plan has been prepared for 6,600 students. The approved
