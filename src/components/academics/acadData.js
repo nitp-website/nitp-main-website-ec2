@@ -337,10 +337,7 @@ const Admissions = [
         "para": "SOP for filling out the admission form. [View SOP]",
         "link": "https://drive.google.com/file/d/1GuE4azQkUYQORN83FBGsqfDuwDMoUMF1/view"
       },
-      {
-        "para": "QR Code for payment of applicable fee. [View QR Code]",
-        "link": "https://drive.google.com/file/d/1MFBfG6lkXK0ddkgYijvlWITwO4EdoXVC/view"
-      }
+      
     ]
   }
 ,  
