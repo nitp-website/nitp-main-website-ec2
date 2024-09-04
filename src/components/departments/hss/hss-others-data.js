@@ -186,6 +186,12 @@ export const LabImages = [
 ]
 
 export const TimeTable = [
+  {
+    title:
+     "Click here for the Master_Time-Table_ HSS_July-December 2024.",
+    link:
+     "https://drive.google.com/file/d/1c6f2tp-MMqf9SzPudHyerB7NfdDB4ffo/view?usp=drive_link",
+   },
  {
   title:
    "Click here for the time table of UG 3rd, 5th and 7th semesters (All Branches), July-December 2022.",
