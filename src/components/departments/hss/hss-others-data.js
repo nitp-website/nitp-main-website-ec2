@@ -192,24 +192,7 @@ export const TimeTable = [
     link:
      "https://drive.google.com/file/d/1c6f2tp-MMqf9SzPudHyerB7NfdDB4ffo/view?usp=drive_link",
    },
- {
-  title:
-   "Click here for the time table of UG 3rd, 5th and 7th semesters (All Branches), July-December 2022.",
-  link:
-   "https://drive.google.com/file/d/1-wloDSEABGjEYgzoEOAYat7FPkiSffW_/view?usp=sharing",
- },
- {
-  title:
-   "Click here for the time table of MTech & PhD (All Branches), July-December 2022.",
-  link:
-   "https://drive.google.com/file/d/1rTH9iuLex7glBjKZqinMKlhHunp4fljL/view?usp=sharing",
- },
- {
-  title:
-   "Click here for the time table of all the subjects offered by HSS to 1st year students (All Branches), January-June 2022.",
-  link:
-   "https://drive.google.com/file/d/1ebFsyL3l2ZXxaLDtYup74gPsJq6P6rM4/view?usp=sharing",
- },
+
 ]
 
 export const ActivityImages = [
