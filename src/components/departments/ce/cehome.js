@@ -20,7 +20,280 @@ export const titleDescription = () => {
  )
 }
 export const research = () => {
- return <></>
+ return( <>
+    <h4 style={{ paddingTop: '10px', paddingBottom: '5px' }}>Program Education Objectives (PEOs) of UG Program</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>PEO Code</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PEO1</td>
+          <td>To equip our students with high quality education, knowledge, innovation and computational skills in the area of Civil Engineering.</td>
+        </tr>
+        <tr>
+          <td>PEO2</td>
+          <td>To empower students to analyze realistic problems, to design civil structures as per IS codes which are economically feasible, and to cope with recent technological innovations.</td>
+        </tr>
+        <tr>
+          <td>PEO3</td>
+          <td>To develop professional ethics, communication skills, leadership quality, and team work capability in the students of Civil Engineering Department for their successful career at international and national level.</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <h4 style={{ paddingTop: '10px', paddingBottom: '5px' }}>Program Outcomes (POs) of UG Program</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>PO Code</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PO1</td>
+          <td>Engineering knowledge: An ability to apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to get the solution of the engineering problems.</td>
+        </tr>
+        <tr>
+          <td>PO2</td>
+          <td>Problem analysis: Ability to identify, formulate, review research literature, and analyze complex engineering problems.</td>
+        </tr>
+        <tr>
+          <td>PO3</td>
+          <td>Design/development of solutions: Ability to design solutions for complex engineering problems by considering social, economic, and environmental aspects.</td>
+        </tr>
+        <tr>
+          <td>PO4</td>
+          <td>Conduct investigations of complex problems: Use research-based knowledge to design, conduct, and analyze experiments to get valid conclusions.</td>
+        </tr>
+        <tr>
+          <td>PO5</td>
+          <td>Modern tool usage: Ability to create, select, and apply appropriate techniques, and to model complex engineering activities with an understanding of the limitations.</td>
+        </tr>
+        <tr>
+          <td>PO6</td>
+          <td>The engineer and society: Ability to apply knowledge by considering social health, safety, legal, and cultural issues.</td>
+        </tr>
+        <tr>
+          <td>PO7</td>
+          <td>Environment and sustainability: Understanding of the impact of the adopted engineering solutions in social and environmental contexts.</td>
+        </tr>
+        <tr>
+          <td>PO8</td>
+          <td>Ethics: Understanding of the ethical issues of civil engineering and applying ethical principles in engineering practices.</td>
+        </tr>
+        <tr>
+          <td>PO9</td>
+          <td>Individual and teamwork: Ability to work effectively as an individual or in a team, as a member or as a leader.</td>
+        </tr>
+        <tr>
+          <td>PO10</td>
+          <td>Communication: An ability to communicate clearly and effectively through different modes of communication.</td>
+        </tr>
+        <tr>
+          <td>PO11</td>
+          <td>Project management and finance: Ability to handle projects and manage finance-related issues.</td>
+        </tr>
+        <tr>
+          <td>PO12</td>
+          <td>Life-long learning: Recognize the need for, and have the preparation and ability to engage in independent and life-long learning.</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <h4 style={{ paddingTop: '10px', paddingBottom: '5px' }}>Program Specific Outcomes (PSOs) of Civil Engineering UG Program</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>PSO Code</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PSO1</td>
+          <td>Analyze, design, and develop civil engineering infrastructure facilities at local and global scales with professional ethics.</td>
+        </tr>
+        <tr>
+          <td>PSO2</td>
+          <td>Provide specific solutions to challenges in water resources, water supply, and sanitation in a sustainable manner.</td>
+        </tr>
+        <tr>
+          <td>PSO3</td>
+          <td>Identify and recommend reliable and sustainable solutions for field-based problems related to soil mechanics and transportation engineering.</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <h4 style={{ paddingTop: '10px', paddingBottom: '5px' }}>Program Educational Objectives (PEOs) of Structural Engineering</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>PEO Code</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PEO1</td>
+          <td>To provide quality education in the field of structural engineering to empower the students to conceive, model, analyze, design, build, and maintain or rehabilitate the structural systems to meet the technological and socio-economic needs of safe, functional, economic, and innovative infrastructure.</td>
+        </tr>
+        <tr>
+          <td>PEO2</td>
+          <td>To develop the capabilities among students to innovate, develop, and implement it for economic growth and enrichment of quality of life.</td>
+        </tr>
+        <tr>
+          <td>PEO3</td>
+          <td>To develop interest and train them to do basic quality research and undertake research projects related to experimental and analytical investigation and use of software techniques, keeping in view the day-to-day needs of the society.</td>
+        </tr>
+        <tr>
+          <td>PEO4</td>
+          <td>To impart professional ethics, communication skills, knowledge related to structural engineering field in depth and breadth so that the students are able to understand and analyze the problems in various interdisciplinary fields of civil engineering.</td>
+        </tr>
+        <tr>
+          <td>PEO5</td>
+          <td>To impart practical knowledge and to develop teamwork spirits and leadership quality to make them able to work with others.</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <h4 style={{ paddingTop: '10px', paddingBottom: '5px' }}>Program Educational Objectives (PEOs) of Geotechnical Engineering</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>PEO Code</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PEO1</td>
+          <td>Engage in investigation, testing, and design in the field of construction and allied engineering works.</td>
+        </tr>
+        <tr>
+          <td>PEO2</td>
+          <td>Solve problems of social relevance by applying the knowledge of Geotechnical Engineering and/or pursue higher education and research.</td>
+        </tr>
+        <tr>
+          <td>PEO3</td>
+          <td>Work effectively as an individual or as a team member in multi-disciplinary projects.</td>
+        </tr>
+        <tr>
+          <td>PEO4</td>
+          <td>Engage in life-long learning, career enhancement, and adapt to changing professional and societal needs by providing training, exposure in soft skills for better career and holistic personality development and develop a professional attitude towards ethical issues.</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <h4 style={{ paddingTop: '10px', paddingBottom: '5px' }}>Program Educational Objectives (PEOs) of Transportation Engineering</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>PEO Code</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PEO1</td>
+          <td>To develop ability in the student to acquire knowledge in engineering and apply it professionally within economic, environmental, social, political, ethical constraints ensuring health, safety, and sustainability.</td>
+        </tr>
+        <tr>
+          <td>PEO2</td>
+          <td>To develop the ability to identify, formulate, comprehend, analyze, design, and solve engineering problems with hands-on experience in various technologies using modern tools necessary for engineering practice to satisfy the needs of society and industry.</td>
+        </tr>
+        <tr>
+          <td>PEO3</td>
+          <td>To equip the students with the ability to design, simulate, experiment, analyze, optimize, and interpret in their core applications through multi-disciplinary concepts and contemporary learning and transform them into industry-ready graduates.</td>
+        </tr>
+        <tr>
+          <td>PEO4</td>
+          <td>To provide training, exposure in soft skills for better career and holistic personality development and develop professional attitude towards ethical issues, teamwork, responsibility, accountability and ingrain in them the capability to relate engineering issues to broader social perspective.</td>
+        </tr>
+        <tr>
+          <td>PEO5</td>
+          <td>To provide students with an academic environment and make them aware of excellence, develop in them the urge of continuous learning, discovery, creativity, innovation, and leadership to become a successful professional in Civil and Transportation Engineering.</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <h4 style={{ paddingTop: '10px', paddingBottom: '5px' }}>Program Educational Objectives (PEOs) of Water Resources Engineering</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>PEO Code</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PEO1</td>
+          <td>This program addresses all water-related issues preferably in the eastern part of the country and provides multidisciplinary and high-quality education in the field of water resources engineering.</td>
+        </tr>
+        <tr>
+          <td>PEO2</td>
+          <td>To enable students to analyze realistic problems, problems related to stormwater drainage, flood damage mitigation, water quality in streams and aquifers, erosion, sedimentation, protection of ecosystems, and other natural resources, and equip our students in solving these problems with analytical and computational skills.</td>
+        </tr>
+        <tr>
+          <td>PEO3</td>
+          <td>To develop professional ethics, communication skills, leadership quality, and teamwork capability, and also to generate knowledge by cutting-edge research.</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <h4 style={{ paddingTop: '10px', paddingBottom: '5px' }}>Program Educational Objectives (PEOs) of Environmental Engineering</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>PEO Code</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PEO1</td>
+          <td>This program addresses all pollution (Water, Air, Noise, and Solid Waste) related issues of the country and provides multidisciplinary and high-quality education in the field of Environmental Engineering.</td>
+        </tr>
+        <tr>
+          <td>PEO2</td>
+          <td>To enable students to analyze realistic problems, problems related to different pollutants, drinking water, clean air of the environment, protection of ecosystems, and other natural resources, and equip our students in solving these problems with analytical and computational skills.</td>
+        </tr>
+        <tr>
+          <td>PEO3</td>
+          <td>To develop professional ethics, communication skills, leadership quality, and teamwork capability, provide solutions to the society, and also to generate knowledge by research.</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <h4 style={{ paddingTop: '10px', paddingBottom: '5px' }}>Program Outcomes (POs) of PG Programs</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>PO Code</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>PO1</td>
+          <td>An ability to independently carry out research/investigation and development work to solve practical problems.</td>
+        </tr>
+        <tr>
+          <td>PO2</td>
+          <td>An ability to write and present a substantial technical report/document.</td>
+        </tr>
+        <tr>
+          <td>PO3</td>
+          <td>Students should be able to demonstrate a degree of mastery over the area as per the specialization of the program. The mastery should be at a level higher than the requirements in the appropriate bachelor program.</td>
+        </tr>
+      </tbody>
+    </table>
+  </>
+  )
 }
 export const about = () => {
  return (
@@ -174,23 +447,38 @@ export const datalist = [
   // img: "/department/about.svg",
  },
  {
+    title: "Vision & Mission",
+    data: "missionvision",
+    // img: "/department/mission.svg",
+   },
+    
+ {
+    title: "PEOs and POs",
+    data: "research",
+    // img: "/department/mission.svg",
+   },
+   {
+    title: "Faculty",
+    relPath: "/ce/faculty",
+    // img: "/department/faculty.svg",
+   },
+ {
   title: "Syllabus",
   relPath: "/ce/syllabus",
   // img: "/department/syllabus.svg",
  },
+ 
  {
-  title: "Faculty",
-  relPath: "/ce/faculty",
-  // img: "/department/faculty.svg",
+  title: "Labs",
+  data: "labs",
+  // img: "/department/labs.svg",
  },
+ 
+ 
+ 
  {
-  title: "Research Highlights",
-  data: "research",
-  // img: "/department/mission.svg",
- },
- {
-  title: "Notice",
-  data: "happening",
+  title: "Activities",
+  data: "activities",
   // img: "/department/activities.svg",
  },
  {
@@ -198,19 +486,5 @@ export const datalist = [
   data: "contact",
   // img: "/department/contact.svg",
  },
- {
-  title: "Labs",
-  data: "labs",
-  // img: "/department/labs.svg",
- },
- {
-  title: "Activities",
-  data: "activities",
-  // img: "/department/activities.svg",
- },
- {
-  title: "Mission & Vision",
-  data: "missionvision",
-  // img: "/department/mission.svg",
- },
+
 ]

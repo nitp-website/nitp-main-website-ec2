@@ -214,7 +214,7 @@ const Dephomepage = ({
         <div className="col-6" style={{ width: `100%` }}>
          <div className="row rowmarr3">
           <h1 data-aos="zoom-in" style={{ fontSize: `3rem` }}>
-           Research Highlights
+         
           </h1>
          </div>
          <br />
