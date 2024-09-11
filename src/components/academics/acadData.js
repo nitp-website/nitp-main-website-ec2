@@ -862,7 +862,7 @@ const CourseUG = [
    },
    {
     para: "Bachelor of Civil Engineering (CEUG)",
-    link: "http://web.nitp.ac.in/downloads/course_structure/CEUG.pdf",
+    link: "https://drive.google.com/file/d/1TTblz48XLiUYs5JRHlqa37VWqpyWXb_w/view?usp=drivesdk",
    },
    {
     para: "Bachelor of Computer Science & Engineering (CSUG)",
@@ -903,34 +903,27 @@ const CoursePG = [
  {
   title: "PG (M.tech/MURP) Course Structure",
   data: [
-   {
-    para: "M. Tech (Civil Engg.) in Environmental Engineering",
-    link:
-     "http://web.nitp.ac.in/downloads/course_structure/MTech_Civil_%20ENV%20Syllabus%20wef%202020-05.10.2020.pdf",
-   },
-   {
-    para: "M.TECH. IN CIVIL ENGINEERING",
-    link:
-     "http://web.nitp.ac.in/downloads/course_structure/MTech_Civil_%20GET%20Syllabus%20wef%202020-05.10.2020.pdf",
-   },
-   {
-    para: "Master in Civil Engineering (River)",
-    link: "http://web.nitp.ac.in/downloads/course_structure/CEPG%20(River).pdf",
-   },
-   {
-    para: "M. Tech (Civil Engg.) in Structural Engineering",
-    link:
-     "http://web.nitp.ac.in/downloads/course_structure/MTech_Civil_%20STE%20Syllabus%20wef%202020-05.10.2020.pdf",
-   },
-   {
-    para: "M.TECH. IN CIVIL ENGINEERING (TRANSPORTATION)",
-    link:
-     "http://web.nitp.ac.in/downloads/course_structure/MTech_Civil_%20TRE%20Syllabus%20wef%202020-05.10.2020.pdf",
-   },
-   {
-    para: "CEPG (Water Resources)",
-    link: "#",
-   },
+    {
+      "para": "M.Tech Water Resources Engineering (Effective from 2021-2022 onward)",
+      "link": "https://drive.google.com/file/d/16XTey9OYvtOJFERcuBfNXlzZU_NskNEg/view?usp=drivesdk"
+    },
+    {
+      "para": "M.Tech Transportation Engineering (Effective from 2021-2022 onward)",
+      "link": "https://drive.google.com/file/d/1fXR4RROFC2UQo461jiNn7--ZQJoN384i/view?usp=drivesdk"
+    },
+    {
+      "para": "M.Tech Structural Engineering (Effective from 2021-2022 onward)",
+      "link": "https://drive.google.com/file/d/1q8Wndh5pM4EcILaTqfafpnag20XqOtS6/view?usp=drivesdk"
+    },
+    {
+      "para": "M.Tech Geotechnical Engineering (Effective from 2021-2022 onward)",
+      "link": "https://drive.google.com/file/d/1-r7SS3hmSbMl52e2VIqJnti8yPlLWiLa/view?usp=drivesdk"
+    },
+    {
+      "para": "M.Tech Environmental Engineering (Effective from 2021-2022 onward)",
+      "link": "https://drive.google.com/file/d/1X57Lq9nCBjK7Db8m990hYBuj_81tRfkE/view?usp=drivesdk"
+    },
+   
    {
     para: "Master in Computer Science & Technology",
     link: "http://web.nitp.ac.in/downloads/course_structure/CSPG.pdf",
