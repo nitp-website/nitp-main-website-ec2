@@ -39,15 +39,7 @@ const Cesyllabus = () => {
                   >
                     PG (M.tech/MURP) Courses
                   </button>
-                  <button
-                    onClick={() => {
-                      setCourse("programmesphd");
-                      setSyllabus(Coursephd);
-                    }}
-                    className={course === "programmesphd" ? "btnactive" : ""}
-                  >
-                    PhD Courses
-                  </button>
+                  
                   <button
                     onClick={() => {
                       setCourse("programmesdd");
@@ -104,11 +96,7 @@ const Cesyllabus = () => {
             
             )}
 
-            {/* Conditional rendering for PhD Courses */}
-            {course === "programmesphd" && (
-             <h3>No Dtat to Show</h3>
-            )}
-
+           
             {/* Conditional rendering for Dual Degree */}
             {course === "programmesdd" && (
               <ul>

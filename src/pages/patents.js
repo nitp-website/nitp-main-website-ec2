@@ -109,7 +109,11 @@ const PatentsTable = () => {
   return (
     <div className="patent-dashboard">
       <h1 className="heading">Patents Dashboard</h1>
-      {isLoading ? (
+      <ul class="patent-links">
+  <li><a href="https://docs.google.com/spreadsheets/d/19SctvCuQT8ImxxLTgxE-rROL5LjNsXbD/edit?usp=drive_link" target="_blank">Granted Patents [View]</a></li>
+  <li><a href="https://docs.google.com/spreadsheets/d/19yd690MT3gUtTA_w9b9GkMI2zpq7XzkU/edit?usp=drive_link" target="_blank">Published Patents [View]</a></li>
+</ul>
+        {/* {isLoading ? (
         <p>Loading...</p>
       ) : error ? (
         <p>{error}</p>
@@ -150,12 +154,26 @@ const PatentsTable = () => {
             </tbody>
           </table>
         </div>
-      )}
+      )} */}
       <style jsx>{`
         .patent-dashboard {
           padding: 45px;
           margin-top: 55px;
         }
+.patent-links {
+  list-style-type: disc; /* Adds bullet points */
+  padding-left: 20px; /* Indentation for bullets */
+}
+
+.patent-links a {
+  text-decoration: none; /* Removes underline */
+  color: black; /* Optional: Set link color */
+  font-size:20px;
+}
+
+.patent-links a:hover {
+  text-decoration: underline; /* Optional: Adds underline on hover */
+}
 
         .heading {
           text-align: center;
